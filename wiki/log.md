@@ -133,3 +133,11 @@
 - 知识冲突：1 个（概念性标注）
 
 ---
+
+## [2026-04-17] query | 综述「核心内容」（提示工程知识库）
+- **输出**: [[Prompt_Engineering]]、[[Context_Engineering]]、[[index]]；即时回答，未保存 synthesis
+
+## [2026-04-17] query | 「提示工程技术」分类与要点
+- **输出**: [[Prompt_Engineering]]、[[Few_Shot_Prompting]]、[[Chain_of_Thought]]、[[5C_Framework]]、[[Context_Engineering]]；即时回答，未保存 synthesis
+
+---
