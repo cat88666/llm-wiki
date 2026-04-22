@@ -1,48 +1,95 @@
-## LLM Wiki 知识库
-本项目是一个基于 [Karpathy 的 LLM Wiki 理念](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f) 构建的 Obsidian 知识库。
+# dx-LLM
 
-### 核心理念
-将碎片化信息编译成**结构化、高度相互链接**的知识网络，便于 AI 辅助学习和研究。
+基于 Karpathy LLM Wiki 思路构建的个人知识管理项目。  
+每个 `llm-wiki-*` 目录是一套独立的知识库实例，统一遵循 `raw/ + wiki/ + CLAUDE.md` 三层结构，由 Claude Code 主动维护。
 
-### 目录结构
+---
+
+## 目录结构
+
 ```
-知识库文件夹 (LLM-Wiki-Vault)
-├── assets                 ← 资源层：图片、PDF、附件
-├── raw                    ← 原始资料层（文件处理后移到archive）
-│   ├── 01-articles        ← 网页技术文章
-│   ├── 02-papers          ← 论文、研报、PDF文档
-│   ├── 03-transcripts     ← 视频、播客文本、会议记录
-│   ├── 04-meeting_notes   ← 会议纪要
-│   └── 09-archive         ← 已归档区：`/ingest` 执行后源文件档案层
-│
-├── wiki/                  ← 知识编译输出层（LLM完全写权限）
-│   ├── index.md           ← 全局索引：wiki页面索引
-│   ├── log.md             ← 行为流水线：Grep-friendly格式ingest/query历史
-│   ├── concepts/          ← 抽象层：方法论、架构模式、第一性原理 
-│   ├── entities/          ← 实体层：人名、公司、工具软件、项目 
-│   ├── sources/           ← 摘要层：针对 raw 文件的一对一核心观点提炼 
-│   └── syntheses/         ← 综合层：针对复杂提问生成的深度研究报告 
-│
-├── CLAUDE.md              ← 全局心智规范：定义语言协议、读写权限与Schema
-└── .claude/               ← Claude Code官方配置目录
-    └── 🛠️ skills/         ← Agent Skill中心
-        ├── ingest/        ← 自定义：编译raw到wiki，并执行09-archive归档
-        ├── query/         ← 自定义：检索wiki/index检索内容，生成带双链引用的回答
-        ├── lint/          ← 自定义：知识体检，修复死链、补充 index、发现认知冲突
-        ├── obsidian-cli/  ← Obsidian官方：调用Obsidian原生API进行检索、打开页面
-        └── defuddle/      ← Obsidian官方：URL自动清理并转化Markdown存入raw/
+dx-LLM/
+├── llm-wiki-template/    标准母版（含规范、模板、演示样例）
+├── llm-wiki-ai/          AI 大模型技术知识库（进行中）
+├── llm-wiki-go/          Go 语言知识库（待建）
+├── llm-wiki-java/        Java 知识库（待建）
+├── llm-wiki-python/      Python 知识库（待建）
+└── assets/               图片素材
 ```
 
-### 使用方式
-在 Obsidian 中打开本 vault，使用Claude Code或者Claudian插件执行操作。
+---
 
-### 常用命令
-- `/query <问题>` — 在知识库中搜索相关内容
-- `/ingest` — 将新的原始资料编译到知识库
-- `/lint` — 检查知识库健康度（死链、孤儿页面）
+## 核心架构
 
-## 知识来源
-- Google Gemini API 官方文档
-- Anthropic Claude 最佳实践
-- 各机构发布的 Prompt Engineering 白皮书
-- 学术论文（如 5C Prompt Contracts）
+每个知识库实例内部结构：
+
+```
+llm-wiki-xxx/
+├── raw/          原始资料（只读，永不修改）
+├── wiki/
+│   ├── index.md          所有页面目录
+│   ├── log.md            操作历史（append-only）
+│   ├── concepts/         概念页
+│   ├── entities/         实体页（人物、工具、项目）
+│   ├── summaries/        主题总结页（多源聚合，非逐篇摘要）
+│   ├── synthesis/        综合分析页（问题驱动）
+│   └── templates/        页面模板
+└── CLAUDE.md     本实例的执行规范（Schema）
+```
+
+---
+
+## 三条核心指令
+
+```
+请摄入 raw/xxx/文章.md
+```
+→ AI 读取原文，提取概念与实体，更新主题总结页，记录操作日志
+
+```
+[任意问题]
+```
+→ AI 检索 wiki，综合回答，有价值的回答自动回写到 synthesis/
+
+```
+请对 wiki 做一次健康检查
+```
+→ AI 扫描矛盾、孤立页、失效链接，生成报告并修复
+
+---
+
+## 使用流程
+
+**新建知识库实例：**
+1. 复制 `llm-wiki-template/` 为新目录（如 `llm-wiki-go/`）
+2. 删除 `demo-*` 文件，保留模板文件和 CLAUDE.md
+3. 将原始资料放入 `raw/`
+
+**日常使用：**
+1. 新文章放入 `raw/` 对应分类
+2. 对话框输入摄入指令，Claude Code 自动处理
+3. 直接提问即可查询，高价值回答自动沉淀到 wiki
+
+**定期维护：**
+- 执行 Lint 健康检查，保持知识库一致性
+
+---
+
+## 核心规则
+
+- `raw/` 只读，AI 只读取，永不修改
+- `summaries/` 按知识主题聚合，不按源文件逐篇生成
+- `synthesis/` 用于跨主题的判断、对比、方案，不重复 summary
+- 每次操作后必须更新 `index.md` 和 `log.md`
+- 规范详见各实例的 `CLAUDE.md`，母版规范见 `llm-wiki-template/CLAUDE.md`
+
+---
+
+## 当前状态
+
+| 实例 | 状态 | 源文件 | Wiki 页面 |
+|------|------|--------|-----------|
+| llm-wiki-ai | 进行中 | 12 篇 | 29 页（7 summary / 14 concept / 6 entity / 2 synthesis） |
+| llm-wiki-go | 待建 | — | — |
+| llm-wiki-java | 待建 | — | — |
+| llm-wiki-python | 待建 | — | — |
