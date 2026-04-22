@@ -11,10 +11,14 @@
             "id": "2156dfc2e6a597d3",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "关系图谱"
+              "type": "markdown",
+              "state": {
+                "file": "llm-wiki-ai/raw/prompt/完整提示工程指南.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "完整提示工程指南"
             }
           }
         ]
@@ -74,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 206.5
+    "width": 283.5
   },
   "right": {
     "id": "16688b1273cd6f38",
@@ -176,10 +180,23 @@
       "bases:新建数据库": false
     }
   },
-  "active": "2156dfc2e6a597d3",
+  "active": "04cddebd4eda2aec",
   "lastOpenFiles": [
-    "页面名称.md",
+    "llm-wiki-ai/raw/prompt/提示词白皮书Goolge.md",
+    "llm-wiki-ai/raw/prompt/5C提示词.md",
+    "llm-wiki-ai/raw/prompt/5C提示词.pdf",
+    "llm-wiki-ai/raw/prompt/提示词工程指南.md",
+    "llm-wiki-ai/raw/prompt/提示词Anthropic.md",
+    "llm-wiki-ai/raw/prompt/提示工程指南.md",
+    "llm-wiki-ai/raw/prompt/完整提示工程指南.md",
+    "assets/LLM_Wiki架构.jpeg",
+    "assets/LLM_Wiki_Karpathy.png",
+    "assets/LLM.jpg",
     "README.md",
+    "llm-wiki-python",
+    "llm-wiki-go",
+    "llm-wiki-java",
+    "页面名称.md",
     "wiki/index.md",
     "DSL_Prompting.md",
     "RAG.md",
@@ -206,10 +223,6 @@
     "wiki/concepts/Chain_of_Thought.md",
     "raw/01-articles/提示设计策略  _  Gemini API.md",
     "raw/08-Japan",
-    "raw/04-java",
-    "raw/03-transcripts/Prompt Engineering Full Course.md",
-    "raw/09-archive/The Complete Prompt Engineering Guide (2025).md",
-    "wiki/sources/摘要-5c-prompt-contracts-paper.md",
-    "wiki/log.md"
+    "raw/04-java"
   ]
 }

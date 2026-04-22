@@ -9,12 +9,12 @@
 
 ```
 dx-LLM/
+├── assets/               图片素材
 ├── llm-wiki-template/    标准母版（含规范、模板、演示样例）
 ├── llm-wiki-ai/          AI 大模型技术知识库（进行中）
 ├── llm-wiki-go/          Go 语言知识库（待建）
 ├── llm-wiki-java/        Java 知识库（待建）
 ├── llm-wiki-python/      Python 知识库（待建）
-└── assets/               图片素材
 ```
 
 ---
