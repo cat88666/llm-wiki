@@ -2,7 +2,7 @@
 title: "摘要-22期课程 提示工程到RAG"
 type: source
 tags: [来源, 课程, 提示工程, RAG]
-sources: [raw/22期课程/01-提示工程到RAG.md]
+sources: [raw/course/01-提示工程到RAG.md]
 last_updated: 2026-04-21
 ---
 

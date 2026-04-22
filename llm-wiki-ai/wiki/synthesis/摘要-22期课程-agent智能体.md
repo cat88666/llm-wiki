@@ -2,7 +2,7 @@
 title: "摘要-22期课程 Agent智能体"
 type: source
 tags: [来源, 课程, Agent, 智能体]
-sources: [raw/22期课程/03-Agent智能体.md]
+sources: [raw/course/03-Agent智能体.md]
 last_updated: 2026-04-21
 ---
 

@@ -3,9 +3,9 @@ title: "RAG"
 type: concept
 tags: [概念, RAG, 检索增强生成, 应用工程]
 sources:
-  - raw/22期课程/02-RAG检索增强.md
-  - raw/17期课程/05-工程-RAG.md
-  - raw/17期课程/11-LLM应用.md
+  - raw/course/02-RAG检索增强.md
+  - raw/LLM工程/05-工程-RAG.md
+  - raw/LLM工程/11-LLM工程.md
 last_updated: 2026-04-21
 ---
 

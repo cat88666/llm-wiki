@@ -7,9 +7,9 @@ aliases: ["vllm", "PagedAttention"]
 domain: "LLM推理服务 / 生产部署"
 related: ["KV-Cache", "分布式训练", "多头注意力"]
 sources:
-  - ../raw/tech/原理/03-理论-LLM核心机制.md
-  - ../raw/tech/原理/10-LLM原理.md
-  - ../raw/tech/原理/07-工程-生产化.md
+  - ../raw/LLM工程/03-理论-LLM核心机制.md
+  - ../raw/LLM工程/10-LLM原理.md
+  - ../raw/LLM工程/07-工程-生产化.md
 created: 2026-04-22
 updated: 2026-04-22
 lint_notes: ""
@@ -43,6 +43,6 @@ lint_notes: ""
 - [[LangFuse]]：可观测性工具，与 vLLM 组合提供完整的生产推理监控链路
 
 ## 来源
-- [03-理论-LLM核心机制.md](../raw/tech/原理/03-理论-LLM核心机制.md)
-- [10-LLM原理.md](../raw/tech/原理/10-LLM原理.md)
-- [07-工程-生产化.md](../raw/tech/原理/07-工程-生产化.md)
+- [03-理论-LLM核心机制.md](../raw/LLM工程/03-理论-LLM核心机制.md)
+- [10-LLM原理.md](../raw/LLM工程/10-LLM原理.md)
+- [07-工程-生产化.md](../raw/LLM工程/07-工程-生产化.md)

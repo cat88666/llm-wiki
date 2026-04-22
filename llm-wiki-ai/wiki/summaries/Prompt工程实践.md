@@ -5,7 +5,7 @@ summary_scope: topic
 title: "Prompt工程实践"
 source_count: 1
 sources:
-  - ../raw/tech/原理/04-工程-Prompt.md
+  - ../raw/LLM工程/04-工程-Prompt.md
 ingested: 2026-04-22
 updated: 2026-04-22
 topics: []
@@ -53,4 +53,4 @@ lint_notes: ""
 - 可连接到 [[LLM生产化与评估]] 的安全防护部分
 
 ## 来源
-- [04-工程-Prompt.md](../raw/tech/原理/04-工程-Prompt.md)
+- [04-工程-Prompt.md](../raw/LLM工程/04-工程-Prompt.md)

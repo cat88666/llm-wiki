@@ -5,8 +5,8 @@ summary_scope: topic
 title: "Agent与工具调用"
 source_count: 2
 sources:
-  - ../raw/tech/原理/06-工程-Agent.md
-  - ../raw/tech/原理/11-LLM应用.md
+  - ../raw/LLM工程/06-工程-Agent.md
+  - ../raw/LLM工程/11-LLM工程.md
 ingested: 2026-04-22
 updated: 2026-04-22
 topics: []
@@ -54,5 +54,5 @@ lint_notes: ""
 - 可延伸到多 Agent 系统的架构模式（Orchestrator/Worker 模式详解）
 
 ## 来源
-- [06-工程-Agent.md](../raw/tech/原理/06-工程-Agent.md)
-- [11-LLM应用.md](../raw/tech/原理/11-LLM应用.md)
+- [06-工程-Agent.md](../raw/LLM工程/06-工程-Agent.md)
+- [11-LLM工程.md](../raw/LLM工程/11-LLM工程.md)

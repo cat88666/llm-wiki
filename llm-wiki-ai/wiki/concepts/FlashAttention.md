@@ -5,9 +5,9 @@ name: "FlashAttention"
 aliases: ["Flash Attention", "IO-aware Attention", "FlashAttention-2", "FlashAttention-3"]
 related: ["Self-Attention", "多头注意力", "KV-Cache", "分布式训练"]
 sources:
-  - ../raw/tech/原理/03-理论-LLM核心机制.md
-  - ../raw/tech/原理/09-Transformer.md
-  - ../raw/tech/原理/10-LLM原理.md
+  - ../raw/LLM工程/03-理论-LLM核心机制.md
+  - ../raw/LLM工程/09-Transformer.md
+  - ../raw/LLM工程/10-LLM原理.md
 created: 2026-04-22
 updated: 2026-04-22
 lint_notes: ""
@@ -44,6 +44,6 @@ FlashAttention-2 相比 FlashAttention-1 的改进：减少非矩阵乘法操作
 - 训练加速：特别是在序列较长时效果更明显，短序列（< 512 token）FlashAttention 的优势相对小
 
 ## 来源
-- [03-理论-LLM核心机制.md](../raw/tech/原理/03-理论-LLM核心机制.md)
-- [09-Transformer.md](../raw/tech/原理/09-Transformer.md)
-- [10-LLM原理.md](../raw/tech/原理/10-LLM原理.md)
+- [03-理论-LLM核心机制.md](../raw/LLM工程/03-理论-LLM核心机制.md)
+- [09-Transformer.md](../raw/LLM工程/09-Transformer.md)
+- [10-LLM原理.md](../raw/LLM工程/10-LLM原理.md)

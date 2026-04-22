@@ -5,7 +5,7 @@ topic: chunking
 tags: [atomic, chunking]
 aliases: [切分]
 status: evergreen
-source: [doc/00原理/05-工程-RAG, doc/00原理/10-LLM原理]
+source: [raw/LLM工程/05-工程-RAG, raw/LLM工程/10-LLM原理]
 hub: [LLM体系, AI工程体系]
 upstream: [RAG]
 downstream: [知识库问答]

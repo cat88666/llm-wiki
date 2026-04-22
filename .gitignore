@@ -1,0 +1,32 @@
+# 操作系统
+.DS_Store
+Thumbs.db
+
+# JetBrains / IntelliJ IDEA（本机/团队无关）
+.idea/
+
+# Obsidian：工作区、图谱、画布等本机常变，不宜入库
+# 若需共享插件配置，可单独再调整规则
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/graph.json
+.obsidian/canvas.json
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+
+# 日志与临时
+*.log
+*.tmp
+*.temp
+
+# 其他编辑器（按需保留）
+# *.swp
+# *~

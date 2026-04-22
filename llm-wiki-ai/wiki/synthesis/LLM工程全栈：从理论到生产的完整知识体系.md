@@ -29,15 +29,15 @@ related_summaries:
   - Agent与工具调用
   - LLM生产化与评估
 sources:
-  - ../raw/tech/原理/01-理论-机器学习.md
-  - ../raw/tech/原理/02-理论-Transformer.md
-  - ../raw/tech/原理/03-理论-LLM核心机制.md
-  - ../raw/tech/原理/04-工程-Prompt.md
-  - ../raw/tech/原理/05-工程-RAG.md
-  - ../raw/tech/原理/06-工程-Agent.md
-  - ../raw/tech/原理/07-工程-生产化.md
-  - ../raw/tech/原理/11-LLM应用.md
-  - ../raw/tech/原理/12-项目-实战.md
+  - ../raw/LLM工程/01-理论-机器学习.md
+  - ../raw/LLM工程/02-理论-Transformer.md
+  - ../raw/LLM工程/03-理论-LLM核心机制.md
+  - ../raw/LLM工程/04-工程-Prompt.md
+  - ../raw/LLM工程/05-工程-RAG.md
+  - ../raw/LLM工程/06-工程-Agent.md
+  - ../raw/LLM工程/07-工程-生产化.md
+  - ../raw/LLM工程/11-LLM工程.md
+  - ../raw/LLM工程/12-项目-实战.md
 created: 2026-04-22
 updated: 2026-04-22
 lint_notes: ""
@@ -218,12 +218,12 @@ Agent 的工程纪律比架构设计更重要：
 **深化方向 3（规模化）**：vLLM 部署实践 → 分布式训练（Megatron-LM/DeepSpeed）→ LLM 评估体系建立
 
 ## 来源
-- [01-理论-机器学习.md](../raw/tech/原理/01-理论-机器学习.md)
-- [02-理论-Transformer.md](../raw/tech/原理/02-理论-Transformer.md)
-- [03-理论-LLM核心机制.md](../raw/tech/原理/03-理论-LLM核心机制.md)
-- [04-工程-Prompt.md](../raw/tech/原理/04-工程-Prompt.md)
-- [05-工程-RAG.md](../raw/tech/原理/05-工程-RAG.md)
-- [06-工程-Agent.md](../raw/tech/原理/06-工程-Agent.md)
-- [07-工程-生产化.md](../raw/tech/原理/07-工程-生产化.md)
-- [11-LLM应用.md](../raw/tech/原理/11-LLM应用.md)
-- [12-项目-实战.md](../raw/tech/原理/12-项目-实战.md)
+- [01-理论-机器学习.md](../raw/LLM工程/01-理论-机器学习.md)
+- [02-理论-Transformer.md](../raw/LLM工程/02-理论-Transformer.md)
+- [03-理论-LLM核心机制.md](../raw/LLM工程/03-理论-LLM核心机制.md)
+- [04-工程-Prompt.md](../raw/LLM工程/04-工程-Prompt.md)
+- [05-工程-RAG.md](../raw/LLM工程/05-工程-RAG.md)
+- [06-工程-Agent.md](../raw/LLM工程/06-工程-Agent.md)
+- [07-工程-生产化.md](../raw/LLM工程/07-工程-生产化.md)
+- [11-LLM工程.md](../raw/LLM工程/11-LLM工程.md)
+- [12-项目-实战.md](../raw/LLM工程/12-项目-实战.md)

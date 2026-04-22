@@ -5,7 +5,7 @@ topic: rag
 tags: [atomic, rag]
 aliases: [检索增强生成]
 status: evergreen
-source: [doc/00原理/05-工程-RAG, doc/22期/02-RAG检索增强]
+source: [raw/LLM工程/05-工程-RAG, raw/course/02-RAG检索增强]
 hub: [LLM体系, AI工程体系]
 upstream: [LLM机制, Prompt工程]
 downstream: [检索策略, Chunking, Embedding, 重排序, 评估体系, 安全与权限控制, 可观测性, 知识库问答]

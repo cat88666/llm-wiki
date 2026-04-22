@@ -16,11 +16,11 @@ related_summaries:
   - Agent与工具调用
   - LLM生产化与评估
 sources:
-  - ../raw/tech/原理/05-工程-RAG.md
-  - ../raw/tech/原理/06-工程-Agent.md
-  - ../raw/tech/原理/07-工程-生产化.md
-  - ../raw/tech/原理/11-LLM应用.md
-  - ../raw/tech/原理/12-项目-实战.md
+  - ../raw/LLM工程/05-工程-RAG.md
+  - ../raw/LLM工程/06-工程-Agent.md
+  - ../raw/LLM工程/07-工程-生产化.md
+  - ../raw/LLM工程/11-LLM工程.md
+  - ../raw/LLM工程/12-项目-实战.md
 created: 2026-04-22
 updated: 2026-04-22
 lint_notes: ""
@@ -131,8 +131,8 @@ lint_notes: ""
 ```
 
 ## 来源
-- [05-工程-RAG.md](../raw/tech/原理/05-工程-RAG.md)
-- [06-工程-Agent.md](../raw/tech/原理/06-工程-Agent.md)
-- [07-工程-生产化.md](../raw/tech/原理/07-工程-生产化.md)
-- [11-LLM应用.md](../raw/tech/原理/11-LLM应用.md)
-- [12-项目-实战.md](../raw/tech/原理/12-项目-实战.md)
+- [05-工程-RAG.md](../raw/LLM工程/05-工程-RAG.md)
+- [06-工程-Agent.md](../raw/LLM工程/06-工程-Agent.md)
+- [07-工程-生产化.md](../raw/LLM工程/07-工程-生产化.md)
+- [11-LLM工程.md](../raw/LLM工程/11-LLM工程.md)
+- [12-项目-实战.md](../raw/LLM工程/12-项目-实战.md)

@@ -5,8 +5,8 @@ summary_scope: topic
 title: "RAG系统设计"
 source_count: 2
 sources:
-  - ../raw/tech/原理/05-工程-RAG.md
-  - ../raw/tech/原理/11-LLM应用.md
+  - ../raw/LLM工程/05-工程-RAG.md
+  - ../raw/LLM工程/11-LLM工程.md
 ingested: 2026-04-22
 updated: 2026-04-22
 topics: []
@@ -56,5 +56,5 @@ lint_notes: ""
 - 可连接到 [[LLM生产化与评估]] summary（Faithfulness 指标评估）
 
 ## 来源
-- [05-工程-RAG.md](../raw/tech/原理/05-工程-RAG.md)
-- [11-LLM应用.md](../raw/tech/原理/11-LLM应用.md)
+- [05-工程-RAG.md](../raw/LLM工程/05-工程-RAG.md)
+- [11-LLM工程.md](../raw/LLM工程/11-LLM工程.md)

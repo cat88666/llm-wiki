@@ -2,7 +2,7 @@
 title: "摘要-22期课程 RAG检索增强"
 type: source
 tags: [来源, 课程, RAG, 检索增强生成]
-sources: [raw/22期课程/02-RAG检索增强.md]
+sources: [raw/course/02-RAG检索增强.md]
 last_updated: 2026-04-21
 ---
 

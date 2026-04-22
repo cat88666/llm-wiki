@@ -7,8 +7,8 @@ aliases: ["Low-Rank Adaptation", "低秩适配", "QLoRA", "LoRA微调"]
 domain: "LLM微调 / 参数高效微调"
 related: ["正则化", "梯度下降与优化", "分布式训练"]
 sources:
-  - ../raw/tech/原理/07-工程-生产化.md
-  - ../raw/tech/原理/11-LLM应用.md
+  - ../raw/LLM工程/07-工程-生产化.md
+  - ../raw/LLM工程/11-LLM工程.md
 created: 2026-04-22
 updated: 2026-04-22
 lint_notes: ""
@@ -42,5 +42,5 @@ lint_notes: ""
 - [[vLLM]]：LoRA 微调后的模型可以用 vLLM 部署服务，vLLM 支持 LoRA 适配器的动态加载
 
 ## 来源
-- [07-工程-生产化.md](../raw/tech/原理/07-工程-生产化.md)
-- [11-LLM应用.md](../raw/tech/原理/11-LLM应用.md)
+- [07-工程-生产化.md](../raw/LLM工程/07-工程-生产化.md)
+- [11-LLM工程.md](../raw/LLM工程/11-LLM工程.md)
