@@ -3,8 +3,8 @@ title: "Claude"
 type: entity
 tags: [模型, Anthropic, LLM, 实体]
 sources: 
-  - raw/01-文章/Prompting best practices-Anthropic.md
-  - raw/01-文章/The Complete Guide to AI Prompt Engineering in 2025-2026.md
+  - raw/prompt/提示工程指南.md
+  - raw/prompt/提示词Anthropic.md
 last_updated: 2026-04-12
 ---
 

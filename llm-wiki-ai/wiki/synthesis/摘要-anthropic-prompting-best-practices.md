@@ -2,7 +2,7 @@
 title: "摘要-Anthropic Claude 提示最佳实践"
 type: source
 tags: [来源, Claude, Anthropic, 提示工程, 最佳实践]
-sources: [raw/01-文章/Prompting best practices-Anthropic.md]
+sources: [raw/prompt/提示词Anthropic.md]
 last_updated: 2026-04-12
 ---
 

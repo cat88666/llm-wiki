@@ -3,11 +3,19 @@ type: summary
 status: active
 summary_scope: topic
 title: "Prompt工程实践"
-source_count: 1
+source_count: 9
 sources:
   - ../raw/llm-engineering/04-工程-Prompt.md
+  - ../raw/prompt/5C提示词.md
+  - ../raw/prompt/完整提示工程指南.md
+  - ../raw/prompt/提示工程指南.md
+  - ../raw/prompt/提示策略Gemini.md
+  - ../raw/prompt/提示词Anthropic.md
+  - ../raw/prompt/提示词工程.md
+  - ../raw/prompt/提示词工程指南.md
+  - ../raw/prompt/提示词白皮书Goolge.md
 ingested: 2026-04-22
-updated: 2026-04-22
+updated: 2026-04-23
 topics: []
 lint_notes: ""
 ---
@@ -28,6 +36,9 @@ lint_notes: ""
 - System Prompt 负责角色设定和行为约束，User Prompt 负责具体任务，两者分离是良好工程实践
 - 结构化输出（要求 JSON/Markdown 格式）配合 Few-shot 示例效果远好于纯文字描述格式要求
 - 自动化评估要配合人工评估：自动指标（BLEU/ROUGE/准确率）无法替代人对"有没有用"的判断
+- 提示工程正在向 **Context Engineering** 演进：优化点不再只是措辞，而是系统提示、外部数据、工具调用、消息历史和输出约束的整体编排
+- 模型特性已经分化：Claude 更偏字面执行与 XML 结构化，Gemini 3 倾向更简洁的提示，GPT-5/Claude 4/Gemini 3 这类推理模型通常不鼓励显式展示 CoT
+- 轻量框架开始成熟：5C、CRAFT 一类框架的价值不在“花哨术语”，而在于把角色、目标、约束、兜底、格式这些稳定要素压缩成可复用模板
 
 ## 关键分歧
 - **Few-shot 示例数量**：3-5 个示例是常见甜点区，但对于非常复杂的任务（如多步推理），示例过少反而会误导；示例质量远比数量重要
@@ -54,3 +65,11 @@ lint_notes: ""
 
 ## 来源
 - [04-工程-Prompt.md](../raw/llm-engineering/04-工程-Prompt.md)
+- [5C提示词.md](../raw/prompt/5C提示词.md)
+- [完整提示工程指南.md](../raw/prompt/完整提示工程指南.md)
+- [提示工程指南.md](../raw/prompt/提示工程指南.md)
+- [提示策略Gemini.md](../raw/prompt/提示策略Gemini.md)
+- [提示词Anthropic.md](../raw/prompt/提示词Anthropic.md)
+- [提示词工程.md](../raw/prompt/提示词工程.md)
+- [提示词工程指南.md](../raw/prompt/提示词工程指南.md)
+- [提示词白皮书Goolge.md](../raw/prompt/提示词白皮书Goolge.md)

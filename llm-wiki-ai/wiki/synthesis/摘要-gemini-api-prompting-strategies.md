@@ -2,7 +2,7 @@
 title: "摘要-Gemini API 提示设计策略"
 type: source
 tags: [来源, Gemini, Google, 提示工程]
-sources: [raw/01-文章/提示设计策略  _  Gemini API.md]
+sources: [raw/prompt/提示策略Gemini.md]
 last_updated: 2026-04-12
 ---
 

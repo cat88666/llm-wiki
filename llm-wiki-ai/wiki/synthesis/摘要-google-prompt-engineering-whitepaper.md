@@ -2,7 +2,7 @@
 title: "摘要-Google 提示工程白皮书"
 type: source
 tags: [来源, Google, Gemini, 白皮书, 提示工程]
-sources: [raw/02-论文/Goolge-Prompt-Engineering-whitepaper.pdf]
+sources: [raw/prompt/提示词白皮书Goolge.md]
 last_updated: 2026-04-12
 ---
 

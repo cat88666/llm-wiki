@@ -2,7 +2,7 @@
 title: "5C 提示契约框架"
 type: concept
 tags: [提示工程, 框架, 5C, 效率, 极简设计]
-sources: [raw/02-论文/5C Prompt Contracts .pdf]
+sources: [raw/prompt/5C提示词.md]
 last_updated: 2026-04-12
 ---
 

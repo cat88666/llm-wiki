@@ -2,7 +2,7 @@
 title: "摘要-5C 提示契约研究论文"
 type: source
 tags: [来源, 论文, 5C框架, 提示设计, 效率优化]
-sources: [raw/02-论文/5C Prompt Contracts .pdf]
+sources: [raw/prompt/5C提示词.md]
 last_updated: 2026-04-12
 ---
 

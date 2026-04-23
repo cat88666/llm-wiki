@@ -3,8 +3,8 @@ title: "Google"
 type: entity
 tags: [公司, AI, Google, 实体]
 sources: 
-  - raw/01-文章/提示设计策略  _  Gemini API.md
-  - raw/02-论文/Goolge-Prompt-Engineering-whitepaper.pdf
+  - raw/prompt/提示策略Gemini.md
+  - raw/prompt/提示词白皮书Goolge.md
 last_updated: 2026-04-12
 ---
 

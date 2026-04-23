@@ -3,9 +3,9 @@ title: "思维链（Chain of Thought，CoT）"
 type: concept
 tags: [提示工程, 推理, CoT, 思维链, 高级技术]
 sources: 
-  - raw/01-文章/提示设计策略  _  Gemini API.md
-  - raw/02-论文/Goolge-Prompt-Engineering-whitepaper.pdf
-  - raw/01-文章/The Complete Guide to AI Prompt Engineering in 2025-2026.md
+  - raw/prompt/提示工程指南.md
+  - raw/prompt/提示策略Gemini.md
+  - raw/prompt/提示词白皮书Goolge.md
 last_updated: 2026-04-12
 ---
 

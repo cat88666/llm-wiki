@@ -3,9 +3,10 @@ title: "提示工程（Prompt Engineering）"
 type: concept
 tags: [提示工程, LLM, AI, 核心概念]
 sources: 
-  - raw/01-文章/提示设计策略  _  Gemini API.md
-  - raw/01-文章/Prompting best practices-Anthropic.md
-  - raw/02-论文/Goolge-Prompt-Engineering-whitepaper.pdf
+  - raw/prompt/提示工程指南.md
+  - raw/prompt/提示策略Gemini.md
+  - raw/prompt/提示词Anthropic.md
+  - raw/prompt/提示词白皮书Goolge.md
 last_updated: 2026-04-12
 ---
 

@@ -2,7 +2,7 @@
 title: "摘要-完整提示工程指南（2025）"
 type: source
 tags: [来源, 提示工程, CRAFT框架, 最佳实践]
-sources: [raw/09-归档/完整提示工程指南（2025）.md]
+sources: [raw/prompt/完整提示工程指南.md]
 last_updated: 2026-04-21
 ---
 

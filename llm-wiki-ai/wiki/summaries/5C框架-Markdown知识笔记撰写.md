@@ -3,7 +3,7 @@ title: "5C 提示契约 - Markdown 知识笔记撰写"
 type: synthesis
 tags: [5C_Framework, 提示词模板, 知识笔记, Markdown]
 sources:
-  - wiki/概念/5C_Framework.md
+  - raw/prompt/5C提示词.md
 last_updated: 2026-04-12
 ---
 

@@ -62,3 +62,10 @@
 - 新增 Entity 页（6个）：XGBoost、vLLM、LangFuse、Qdrant、LoRA、Reranker
 - 新增 Synthesis 页（2个）：RAG-vs-微调-vs-Agent 对比、LLM工程全栈知识体系
 - 重写 `index.md`（含完整路径和描述）
+
+## [2026-04-23] Ingest | 增量摄入 prompt 资料并修正索引
+- 来源：`raw/prompt/` 下 8 个文件（5C 提示词、完整提示工程指南、提示工程指南、提示策略 Gemini、提示词 Anthropic、提示词工程、提示词工程指南、提示词白皮书 Goolge）
+- 将 prompt 资料正式并入 `wiki/summaries/Prompt工程实践.md`，补充现代提示工程的共识、模型差异与轻量框架视角
+- 修正已有 prompt 相关页面中的旧来源路径，统一到当前 `raw/prompt/...` 目录
+- 新增来源摘要页：`wiki/synthesis/摘要-tech-with-tim-提示词工程课程.md`
+- 更新 `index.md`，补登记既有的 prompt 相关 summary / concept / entity / synthesis 页面

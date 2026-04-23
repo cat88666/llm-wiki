@@ -2,7 +2,7 @@
 title: "上下文工程（Context Engineering）"
 type: concept
 tags: [提示工程, 上下文工程, 高级概念, 范式转变]
-sources: [raw/01-文章/The Complete Guide to AI Prompt Engineering in 2025-2026.md]
+sources: [raw/prompt/提示工程指南.md]
 last_updated: 2026-04-12
 ---
 

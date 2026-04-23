@@ -2,7 +2,7 @@
 title: "Anthropic"
 type: entity
 tags: [公司, AI, 实体, Anthropic]
-sources: [raw/01-文章/Prompting best practices-Anthropic.md]
+sources: [raw/prompt/提示词Anthropic.md]
 last_updated: 2026-04-12
 ---
 

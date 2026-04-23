@@ -2,7 +2,7 @@
 title: "摘要-提示工程 2025 完整指南"
 type: source
 tags: [来源, 提示工程, ChatGPT, Claude, Gemini]
-sources: [raw/01-文章/Prompt Engineering in 2025_ Complete Guide for ChatGPT, Claude, and Gemini.md]
+sources: [raw/prompt/提示词工程指南.md]
 last_updated: 2026-04-12
 ---
 
