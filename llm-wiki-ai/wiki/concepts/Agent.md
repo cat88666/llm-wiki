@@ -4,7 +4,7 @@ type: concept
 tags: [概念, Agent, 智能体, 应用工程]
 sources:
   - raw/course/03-Agent智能体.md
-  - raw/LLM工程/06-工程-Agent.md
+  - raw/llm-engineering/06-工程-Agent.md
 last_updated: 2026-04-21
 ---
 

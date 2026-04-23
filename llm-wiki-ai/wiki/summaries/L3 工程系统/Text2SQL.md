@@ -5,7 +5,7 @@ topic: text2sql
 tags: [application, prompt, tool]
 aliases: [ChatBI, SQL生成]
 status: evergreen
-source: [raw/LLM工程/04-工程-Prompt, raw/LLM工程/06-工程-Agent, raw/LLM工程/11-LLM工程, raw/LLM工程/12-项目-实战]
+source: [raw/llm-engineering/04-工程-Prompt, raw/llm-engineering/06-工程-Agent, raw/llm-engineering/11-LLM工程, raw/llm-engineering/12-项目-实战]
 hub: [AI工程体系]
 upstream: [Prompt工程, Function Calling, 特征工程]
 downstream: []

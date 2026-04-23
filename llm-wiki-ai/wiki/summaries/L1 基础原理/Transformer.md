@@ -5,7 +5,7 @@ topic: transformer
 tags: [atomic, transformer]
 aliases: []
 status: evergreen
-source: [raw/LLM工程/02-Transformer, raw/LLM工程/09-Transformer]
+source: [raw/llm-engineering/02-Transformer, raw/llm-engineering/09-Transformer]
 hub: [LLM体系]
 upstream: [机器学习, LLM体系]
 downstream: [注意力机制, 位置编码, 归一化与残差, LLM机制]

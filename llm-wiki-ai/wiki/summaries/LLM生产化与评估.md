@@ -5,9 +5,9 @@ summary_scope: topic
 title: "LLM生产化与评估"
 source_count: 3
 sources:
-  - ../raw/LLM工程/07-工程-生产化.md
-  - ../raw/LLM工程/11-LLM工程.md
-  - ../raw/LLM工程/12-项目-实战.md
+  - ../raw/llm-engineering/07-工程-生产化.md
+  - ../raw/llm-engineering/11-LLM工程.md
+  - ../raw/llm-engineering/12-项目-实战.md
 ingested: 2026-04-22
 updated: 2026-04-22
 topics: []
@@ -56,6 +56,6 @@ lint_notes: ""
 - 可连接综合分析 [[RAG-vs-微调-vs-Agent：LLM能力增强三种路径对比]]
 
 ## 来源
-- [07-工程-生产化.md](../raw/LLM工程/07-工程-生产化.md)
-- [11-LLM工程.md](../raw/LLM工程/11-LLM工程.md)
-- [12-项目-实战.md](../raw/LLM工程/12-项目-实战.md)
+- [07-工程-生产化.md](../raw/llm-engineering/07-工程-生产化.md)
+- [11-LLM工程.md](../raw/llm-engineering/11-LLM工程.md)
+- [12-项目-实战.md](../raw/llm-engineering/12-项目-实战.md)

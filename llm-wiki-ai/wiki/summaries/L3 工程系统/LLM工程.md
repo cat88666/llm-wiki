@@ -5,7 +5,7 @@ topic: llm-engineering
 tags: [application, engineering, llm]
 aliases: [LLM应用]
 status: evergreen
-source: [raw/LLM工程/11-LLM工程, raw/LLM工程/12-项目-实战]
+source: [raw/llm-engineering/11-LLM工程, raw/llm-engineering/12-项目-实战]
 hub: [AI工程体系]
 upstream: [模型路由与降级]
 downstream: [知识库问答, Text2SQL, 多模态应用, 自动化工作流]

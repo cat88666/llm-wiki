@@ -5,7 +5,7 @@ topic: agent
 tags: [atomic, agent]
 aliases: [智能体]
 status: evergreen
-source: [raw/LLM工程/06-工程-Agent, raw/course/03-Agent智能体]
+source: [raw/llm-engineering/06-工程-Agent, raw/course/03-Agent智能体]
 hub: [LLM体系, AI工程体系]
 upstream: [LLM机制, 推理优化]
 downstream: [Function Calling, MCP, 记忆与状态管理, 安全与权限控制, 成本控制, 模型路由与降级, 自动化工作流]

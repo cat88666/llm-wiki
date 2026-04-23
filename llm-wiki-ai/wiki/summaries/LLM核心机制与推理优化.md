@@ -5,8 +5,8 @@ summary_scope: topic
 title: "LLM核心机制与推理优化"
 source_count: 2
 sources:
-  - ../raw/LLM工程/03-理论-LLM核心机制.md
-  - ../raw/LLM工程/10-LLM原理.md
+  - ../raw/llm-engineering/03-理论-LLM核心机制.md
+  - ../raw/llm-engineering/10-LLM原理.md
 ingested: 2026-04-22
 updated: 2026-04-22
 topics: []
@@ -54,5 +54,5 @@ lint_notes: ""
 - 可连接到 [[LLM生产化与评估]] summary 页（推理延迟优化与成本控制）
 
 ## 来源
-- [03-理论-LLM核心机制.md](../raw/LLM工程/03-理论-LLM核心机制.md)
-- [10-LLM原理.md](../raw/LLM工程/10-LLM原理.md)
+- [03-理论-LLM核心机制.md](../raw/llm-engineering/03-理论-LLM核心机制.md)
+- [10-LLM原理.md](../raw/llm-engineering/10-LLM原理.md)

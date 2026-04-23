@@ -5,9 +5,9 @@ name: "KV-Cache"
 aliases: ["KV Cache", "Key-Value Cache", "键值缓存"]
 related: ["Self-Attention", "多头注意力", "FlashAttention", "分布式训练"]
 sources:
-  - ../raw/LLM工程/03-理论-LLM核心机制.md
-  - ../raw/LLM工程/10-LLM原理.md
-  - ../raw/LLM工程/02-理论-Transformer.md
+  - ../raw/llm-engineering/03-理论-LLM核心机制.md
+  - ../raw/llm-engineering/10-LLM原理.md
+  - ../raw/llm-engineering/02-理论-Transformer.md
 created: 2026-04-22
 updated: 2026-04-22
 lint_notes: ""
@@ -43,6 +43,6 @@ KV Cache 的量化：将 KV Cache 从 fp16 量化为 int8（或 int4）可以减
 - 批量推理：PagedAttention 通过共享物理块支持高效 batching，同一 prefix 的多个请求可以共享 prefix 的 KV Cache（Prefix Caching）
 
 ## 来源
-- [03-理论-LLM核心机制.md](../raw/LLM工程/03-理论-LLM核心机制.md)
-- [10-LLM原理.md](../raw/LLM工程/10-LLM原理.md)
-- [02-理论-Transformer.md](../raw/LLM工程/02-理论-Transformer.md)
+- [03-理论-LLM核心机制.md](../raw/llm-engineering/03-理论-LLM核心机制.md)
+- [10-LLM原理.md](../raw/llm-engineering/10-LLM原理.md)
+- [02-理论-Transformer.md](../raw/llm-engineering/02-理论-Transformer.md)

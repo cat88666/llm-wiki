@@ -5,7 +5,7 @@ topic: mcp
 tags: [atomic, mcp]
 aliases: [Model Context Protocol]
 status: evergreen
-source: [raw/LLM工程/06-工程-Agent]
+source: [raw/llm-engineering/06-工程-Agent]
 hub: [AI工程体系]
 upstream: [Agent]
 downstream: [自动化工作流]
