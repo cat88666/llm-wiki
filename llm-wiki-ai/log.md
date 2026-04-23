@@ -69,3 +69,8 @@
 - 修正已有 prompt 相关页面中的旧来源路径，统一到当前 `raw/prompt/...` 目录
 - 新增来源摘要页：`wiki/synthesis/摘要-tech-with-tim-提示词工程课程.md`
 - 更新 `index.md`，补登记既有的 prompt 相关 summary / concept / entity / synthesis 页面
+
+## [2026-04-23] Update | 重写 concepts 为第一性原理风格
+- 统一 `wiki/concepts/` 主要概念页结构为：一句话定义、第一性原理、核心机制、关键权衡、概念关系、应用边界
+- 重写注意力、推理优化、机器学习基础、Prompt/RAG/Agent 等概念页，去掉术语罗列和导航式写法
+- 将 `AI工程体系`、`LLM体系`、`5C_Framework` 等框架页改写为框架性概念，而非目录索引页

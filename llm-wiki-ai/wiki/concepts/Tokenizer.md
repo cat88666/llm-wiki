@@ -2,45 +2,45 @@
 type: concept
 status: active
 name: "Tokenizer"
-aliases: ["分词器", "BPE", "Byte-Pair Encoding", "WordPiece", "SentencePiece", "词表"]
-related: ["Self-Attention", "KV-Cache", "Prompt工程", "分布式训练"]
+aliases: ["分词器", "BPE", "SentencePiece", "WordPiece", "tokenization"]
+related: ["Self-Attention", "KV-Cache", "Prompt工程", "LLM体系"]
 sources:
   - ../raw/engineering/03-理论-LLM核心机制.md
   - ../raw/engineering/10-LLM原理.md
 created: 2026-04-22
-updated: 2026-04-22
+updated: 2026-04-23
 lint_notes: ""
 ---
 
 # Tokenizer
 
-> 一句话定义：Tokenizer 将原始文本映射为 token 序列（整数 ID），决定模型能看到多少文本信息（上下文利用率）、推理成本（token 数量）和对罕见词的处理能力（OOV）。
+> 一句话定义：Tokenizer 的本质，是把连续文本离散化为模型可处理的基本符号单位，并决定模型“看到世界”的粒度。
 
-## 核心要点
-- **Tokenizer 决定上下文利用率**：同样的文本在不同 Tokenizer 下产生不同长度的 token 序列，效率低的 Tokenizer（如对中文支持差的 GPT-2 词表）会"浪费"上下文窗口
-- **BPE（Byte-Pair Encoding）**：从单字节出发，迭代合并频率最高的相邻 token 对，构建词表；训练语料的语言分布决定词表的语言覆盖效率；GPT 系列使用 BPE，词表约 50K-100K
-- **WordPiece**：BERT 使用，类似 BPE 但合并判断标准不同（最大化训练数据似然而非频率）；对子词（subword）的处理类似 BPE，低频词被拆成更细的片段
-- **SentencePiece**：与语言无关的实现（不依赖预分词），支持 BPE 和 Unigram 两种算法；LLaMA、T5 等模型使用，对多语言场景更友好
-- **中文 Tokenizer 效率问题**：GPT 系列词表对中文覆盖不足，一个汉字或词可能占 2-4 个 token；专门优化的中文词表（如 ChatGLM、Qwen）可将中文 token 效率提升 2-3 倍，直接降低推理成本
+## 第一性原理
+- 神经网络不能直接处理字符串，只能处理有限词表中的离散 ID。
+- 所以语言建模的第一步不是理解语义，而是先把文本切成某种可枚举的最小单位。
+- 这个切分不是中性的：切得太粗会丢泛化能力，切得太细会拉长序列、放大计算成本。
 
-## 详细说明
+## 核心机制
+- 训练阶段从语料中学习高频子词合并规则或词表。
+- 推理阶段把新文本映射成 token 序列，再交给 embedding 和 [[Self-Attention]]。
+- 子词方案的核心目标，是在“词表大小”和“平均序列长度”之间取得平衡。
+- 特殊 token 进一步承载边界、角色、分隔和控制信号。
 
-BPE 的训练过程：初始词表为所有字节（256 个），对训练语料统计相邻 token 对的频率，合并频率最高的 pair 为新 token（如 "t" + "h" → "th"），重复 N 次得到目标词表大小（通常 32K-100K）。推理时对新文本贪婪地应用学到的合并规则。BPE 保证了任何文本都可以被分词（通过 fallback 到字节级别），没有 OOV（Out-of-Vocabulary）问题。
-
-Tokenizer 对模型行为的影响比直觉上更深远：同一个 Tokenizer 训练出来的模型对 token 边界有"感知"，比如数字的加法如果每位数字是独立 token，模型会分别处理每位，这与人类的数学直觉不同。最近的研究（如 Llama 3 的 128K 词表）发现更大词表可以提升数学和代码任务的性能，因为数字和符号有更完整的 token 表示。
-
-Tokenizer 的特殊 token：`<eos>`（序列结束）、`<pad>`（填充）、`<unk>`（未知，BPE 理论上不需要但保留）、`<|system|>` 等指令模板 token，这些 token 在训练时有特殊含义，推理时不应该出现在用户输入中（否则可能干扰模型行为）。
+## 关键权衡
+- 词表越大，单个 token 表达越完整，但嵌入矩阵更大、冷门词泛化更差。
+- 词表越小，覆盖越稳，但同一段文本会拆成更多 token，直接推高计算和 [[KV-Cache]] 成本。
+- 对中文、代码、数字、公式这类分布差异大的场景，Tokenizer 设计会直接影响模型体验。
 
 ## 与其他概念的关系
-- 是 [[Self-Attention]] 的前置步骤：Tokenizer 的输出（token IDs）经过 Embedding 层转化为向量，才进入 Transformer 的注意力计算
-- 影响 [[KV-Cache]] 大小：token 数量越多，KV Cache 越大；高效 Tokenizer 直接降低推理成本和 KV Cache 压力
-- 关联 [[Prompt工程]]：Prompt 中的 token 数量直接影响推理成本，了解 Tokenizer 才能优化 Prompt 的 token 效率
+- [[Self-Attention]]：Tokenizer 输出的是注意力机制处理的输入单位。
+- [[KV-Cache]]：token 越多，缓存越大。
+- [[Prompt工程]]：同样一句话的 token 化方式不同，会改变成本和上下文利用率。
+- [[LLM体系]]：Tokenizer 是从文本进入 Transformer 的入口层，而不是附属细节。
 
-## 应用场景
-- 中文 LLM 部署：选择对中文有良好覆盖的词表（ChatGLM/Qwen 的 Tokenizer 优于 GPT-2 词表）
-- Token 成本控制：在高频调用场景，压缩 Prompt 的 token 数量（避免重复、冗余描述）直接影响成本
-- 多语言模型：SentencePiece + 多语言语料训练词表，保证跨语言的 token 效率相对均衡
-- 代码模型：代码的 Tokenizer 需要对缩进、括号等符号有精细分词，GPT-4 的 tiktoken 对代码效率做了专门优化
+## 应用边界
+- Tokenizer 不直接提供语义理解，但它定义了模型能以什么粒度学习语义。
+- 很多“模型不擅长某类字符串”的问题，根因其实在 token 切分而不只在参数规模。
 
 ## 来源
 - [03-理论-LLM核心机制.md](../raw/engineering/03-理论-LLM核心机制.md)
