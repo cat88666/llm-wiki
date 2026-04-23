@@ -5,8 +5,8 @@ name: "Tokenizer"
 aliases: ["分词器", "BPE", "Byte-Pair Encoding", "WordPiece", "SentencePiece", "词表"]
 related: ["Self-Attention", "KV-Cache", "Prompt工程", "分布式训练"]
 sources:
-  - ../raw/llm-engineering/03-理论-LLM核心机制.md
-  - ../raw/llm-engineering/10-LLM原理.md
+  - ../raw/engineering/03-理论-LLM核心机制.md
+  - ../raw/engineering/10-LLM原理.md
 created: 2026-04-22
 updated: 2026-04-22
 lint_notes: ""
@@ -43,5 +43,5 @@ Tokenizer 的特殊 token：`<eos>`（序列结束）、`<pad>`（填充）、`<
 - 代码模型：代码的 Tokenizer 需要对缩进、括号等符号有精细分词，GPT-4 的 tiktoken 对代码效率做了专门优化
 
 ## 来源
-- [03-理论-LLM核心机制.md](../raw/llm-engineering/03-理论-LLM核心机制.md)
-- [10-LLM原理.md](../raw/llm-engineering/10-LLM原理.md)
+- [03-理论-LLM核心机制.md](../raw/engineering/03-理论-LLM核心机制.md)
+- [10-LLM原理.md](../raw/engineering/10-LLM原理.md)

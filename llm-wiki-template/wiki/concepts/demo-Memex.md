@@ -39,4 +39,4 @@ Memex 的核心贡献不是存储，而是"关联"——这个理念直接影响
 Memex 作为历史概念，今天的应用价值在于：理解为什么"文档关联"比"文档存储"更重要，从而理解 LLM Wiki 为何比单纯的文件归档有更高价值。
 
 ## 来源
-- [Karpathy 的LLM Wiki个人知识管理方案和本体模型驱动AI写作比较](../../raw/tech/demo-001-Karpathy的LLM Wiki个人知识管理方案和本体模型驱动AI写作比较.md)
+- [Karpathy 的LLM Wiki个人知识管理方案和本体模型驱动AI写作比较](../../raw/articles/demo-001-Karpathy的LLM%20Wiki个人知识管理方案和本体模型驱动AI写作比较.md)

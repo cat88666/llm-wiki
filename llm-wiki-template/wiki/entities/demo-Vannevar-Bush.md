@@ -33,4 +33,4 @@ updated: 2026-04-22
 - [[demo-Karpathy]]：其 LLM Wiki 方案在精神上与 Memex 一脉相承。
 
 ## 来源
-- [Karpathy 的LLM Wiki个人知识管理方案和本体模型驱动AI写作比较](../../raw/tech/demo-001-Karpathy的LLM Wiki个人知识管理方案和本体模型驱动AI写作比较.md)
+- [Karpathy 的LLM Wiki个人知识管理方案和本体模型驱动AI写作比较](../../raw/articles/demo-001-Karpathy的LLM%20Wiki个人知识管理方案和本体模型驱动AI写作比较.md)

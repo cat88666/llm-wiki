@@ -5,7 +5,7 @@ topic: tokenizer
 tags: [atomic, tokenizer]
 aliases: []
 status: evergreen
-source: [raw/llm-engineering/03-LLM核心机制, raw/llm-engineering/10-LLM原理]
+source: [raw/engineering/03-LLM核心机制, raw/engineering/10-LLM原理]
 hub: [LLM体系]
 upstream: [位置编码, LLM机制]
 downstream: [Embedding]

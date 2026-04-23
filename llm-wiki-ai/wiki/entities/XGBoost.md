@@ -7,8 +7,8 @@ aliases: ["Extreme Gradient Boosting", "xgboost"]
 domain: "机器学习 / 结构化数据"
 related: ["集成学习", "正则化", "梯度下降与优化"]
 sources:
-  - ../raw/llm-engineering/01-理论-机器学习.md
-  - ../raw/llm-engineering/08-机器学习.md
+  - ../raw/engineering/01-理论-机器学习.md
+  - ../raw/engineering/08-机器学习.md
 created: 2026-04-22
 updated: 2026-04-22
 lint_notes: ""
@@ -41,5 +41,5 @@ lint_notes: ""
 - [[vLLM]]：不同领域工具，LLM 推理服务，与 XGBoost 不直接关联
 
 ## 来源
-- [01-理论-机器学习.md](../raw/llm-engineering/01-理论-机器学习.md)
-- [08-机器学习.md](../raw/llm-engineering/08-机器学习.md)
+- [01-理论-机器学习.md](../raw/engineering/01-理论-机器学习.md)
+- [08-机器学习.md](../raw/engineering/08-机器学习.md)

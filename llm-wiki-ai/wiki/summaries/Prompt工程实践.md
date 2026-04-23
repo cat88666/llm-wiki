@@ -5,7 +5,7 @@ summary_scope: topic
 title: "Prompt工程实践"
 source_count: 9
 sources:
-  - ../raw/llm-engineering/04-工程-Prompt.md
+  - ../raw/engineering/04-工程-Prompt.md
   - ../raw/prompt/5C提示词.md
   - ../raw/prompt/完整提示工程指南.md
   - ../raw/prompt/提示工程指南.md
@@ -64,7 +64,7 @@ lint_notes: ""
 - 可连接到 [[LLM生产化与评估]] 的安全防护部分
 
 ## 来源
-- [04-工程-Prompt.md](../raw/llm-engineering/04-工程-Prompt.md)
+- [04-工程-Prompt.md](../raw/engineering/04-工程-Prompt.md)
 - [5C提示词.md](../raw/prompt/5C提示词.md)
 - [完整提示工程指南.md](../raw/prompt/完整提示工程指南.md)
 - [提示工程指南.md](../raw/prompt/提示工程指南.md)

@@ -34,4 +34,4 @@ updated: 2026-04-22
 临时文件问答、快速信息定位、外部知识即时补充。
 
 ## 来源
-- [Karpathy 的LLM Wiki个人知识管理方案和本体模型驱动AI写作比较](../../raw/tech/demo-001-Karpathy的LLM Wiki个人知识管理方案和本体模型驱动AI写作比较.md)
+- [Karpathy 的LLM Wiki个人知识管理方案和本体模型驱动AI写作比较](../../raw/articles/demo-001-Karpathy的LLM%20Wiki个人知识管理方案和本体模型驱动AI写作比较.md)

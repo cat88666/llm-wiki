@@ -35,4 +35,4 @@ Schema 则像操作宪法，约束 LLM 如何 ingest、如何 query、如何 lin
 所有需要将原始资料与 AI 生成知识严格分层的知识库系统。
 
 ## 来源
-- [Karpathy 的LLM Wiki个人知识管理方案和本体模型驱动AI写作比较](../../raw/tech/demo-001-Karpathy的LLM Wiki个人知识管理方案和本体模型驱动AI写作比较.md)
+- [Karpathy 的LLM Wiki个人知识管理方案和本体模型驱动AI写作比较](../../raw/articles/demo-001-Karpathy的LLM%20Wiki个人知识管理方案和本体模型驱动AI写作比较.md)

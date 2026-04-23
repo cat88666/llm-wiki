@@ -7,8 +7,8 @@ aliases: ["Langfuse", "LLM可观测性", "LLM Observability"]
 domain: "LLM生产化 / 可观测性 / 评估"
 related: ["Prompt工程", "RAG", "Function-Calling"]
 sources:
-  - ../raw/llm-engineering/07-工程-生产化.md
-  - ../raw/llm-engineering/12-项目-实战.md
+  - ../raw/engineering/07-工程-生产化.md
+  - ../raw/engineering/12-项目-实战.md
 created: 2026-04-22
 updated: 2026-04-22
 lint_notes: ""
@@ -41,5 +41,5 @@ lint_notes: ""
 - [[vLLM]]：推理框架，与 LangFuse 组合使用，vLLM 提供推理服务，LangFuse 提供可观测性
 
 ## 来源
-- [07-工程-生产化.md](../raw/llm-engineering/07-工程-生产化.md)
-- [12-项目-实战.md](../raw/llm-engineering/12-项目-实战.md)
+- [07-工程-生产化.md](../raw/engineering/07-工程-生产化.md)
+- [12-项目-实战.md](../raw/engineering/12-项目-实战.md)

@@ -5,7 +5,7 @@ topic: llm
 tags: [atomic, llm]
 aliases: [大模型机制]
 status: evergreen
-source: [raw/llm-engineering/03-LLM核心机制, raw/llm-engineering/10-LLM原理]
+source: [raw/engineering/03-LLM核心机制, raw/engineering/10-LLM原理]
 hub: [LLM体系]
 upstream: [Transformer, LLM体系]
 downstream: [Tokenizer, 训练与并行, 推理优化, 显存与量化, 微调与对齐, Prompt工程, RAG, Agent]

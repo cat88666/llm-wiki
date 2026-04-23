@@ -37,4 +37,4 @@ M1-M4 模型正是对这个空白的补全。
 AI 辅助写作、历史文章逆向建模、知识元抽取、结构化写作系统设计。
 
 ## 来源
-- [Karpathy 的LLM Wiki个人知识管理方案和本体模型驱动AI写作比较](../../raw/tech/demo-001-Karpathy的LLM Wiki个人知识管理方案和本体模型驱动AI写作比较.md)
+- [Karpathy 的LLM Wiki个人知识管理方案和本体模型驱动AI写作比较](../../raw/articles/demo-001-Karpathy的LLM%20Wiki个人知识管理方案和本体模型驱动AI写作比较.md)

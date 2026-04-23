@@ -5,9 +5,9 @@ name: "Function-Calling"
 aliases: ["工具调用", "Tool Use", "Tool Calling", "函数调用"]
 related: ["RAG", "Prompt工程", "Agent与工具调用"]
 sources:
-  - ../raw/llm-engineering/06-工程-Agent.md
-  - ../raw/llm-engineering/11-LLM工程.md
-  - ../raw/llm-engineering/12-项目-实战.md
+  - ../raw/engineering/06-工程-Agent.md
+  - ../raw/engineering/11-LLM工程.md
+  - ../raw/engineering/12-项目-实战.md
 created: 2026-04-22
 updated: 2026-04-22
 lint_notes: ""
@@ -58,6 +58,6 @@ Function Calling 的技术实现：用户发送消息 → LLM 决定调用哪个
 - 多步任务 Agent：工具的组合调用实现复杂任务（查询 → 计算 → 汇总 → 发送报告）
 
 ## 来源
-- [06-工程-Agent.md](../raw/llm-engineering/06-工程-Agent.md)
-- [11-LLM工程.md](../raw/llm-engineering/11-LLM工程.md)
-- [12-项目-实战.md](../raw/llm-engineering/12-项目-实战.md)
+- [06-工程-Agent.md](../raw/engineering/06-工程-Agent.md)
+- [11-LLM工程.md](../raw/engineering/11-LLM工程.md)
+- [12-项目-实战.md](../raw/engineering/12-项目-实战.md)

@@ -5,7 +5,7 @@ topic: prompt
 tags: [atomic, prompt]
 aliases: [提示工程]
 status: evergreen
-source: [raw/llm-engineering/04-工程-Prompt, raw/course/01-提示工程到RAG]
+source: [raw/engineering/04-工程-Prompt, raw/course/01-提示工程到RAG]
 hub: [LLM体系, AI工程体系]
 upstream: [LLM机制, 微调与对齐]
 downstream: [RAG, Text2SQL]

@@ -5,7 +5,7 @@ topic: embedding
 tags: [atomic, embedding]
 aliases: []
 status: evergreen
-source: [raw/llm-engineering/05-工程-RAG, raw/llm-engineering/10-LLM原理]
+source: [raw/engineering/05-工程-RAG, raw/engineering/10-LLM原理]
 hub: [LLM体系, AI工程体系]
 upstream: [Tokenizer, RAG]
 downstream: [特征工程]
