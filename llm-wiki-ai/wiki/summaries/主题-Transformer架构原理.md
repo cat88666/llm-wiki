@@ -50,9 +50,11 @@ lint_notes: ""
 - 多头注意力中每个 Head 的维度是 d_model / num_heads，并行计算后 concat 再投影，这保证了总参数量不变
 
 ## 延伸方向
-- 可拆分为 [[机制-Self-Attention]] 和 [[机制-多头注意力]] 的详细 concept 页
-- 可延伸到 [[机制-KV-Cache]] 和 [[机制-FlashAttention]] 的工程优化 concept 页
-- 可连接到 [[主题-LLM核心机制与推理优化]] summary 页（GQA、分布式训练）
+- [[机制-Self-Attention]] — Q/K/V 计算细节
+- [[机制-多头注意力]] — 多头并行机制与 MHA/GQA/MQA 权衡
+- [[机制-KV-Cache]] / [[机制-FlashAttention]] — 工程优化方向
+- [[机制-Decoder-only前向传播]] — 完整端到端前向传播流程（含96层堆叠与自回归循环，来源：博士老师手绘图）
+- [[主题-LLM核心机制与推理优化]] — GQA、分布式训练等规模化机制
 
 ## 来源
 - [02-理论-Transformer.md](../raw/engineering/02-理论-Transformer.md)

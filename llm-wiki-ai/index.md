@@ -31,7 +31,8 @@
 
 ### Transformer / LLM 机制
 - [[机制-Self-Attention]](wiki/concepts/机制-Self-Attention.md) — Q/K/V 三矩阵的匹配+聚合机制，以及为何除以√d_k
-- [[机制-多头注意力]](wiki/concepts/机制-多头注意力.md) — 多个子空间并行捕获不同关系，参数量不增加
+- [[机制-多头注意力]](wiki/concepts/机制-多头注意力.md) — 多个子空间并行捕获不同关系，每头独立 Q/K/V 投影后 Concat
+- [[机制-Decoder-only前向传播]](wiki/concepts/机制-Decoder-only前向传播.md) — GPT类模型完整端到端流程：输入Embedding→N层Block→Softmax→自回归循环
 - [[机制-KV-Cache]](wiki/concepts/机制-KV-Cache.md) — 推理阶段缓存 K/V 矩阵以避免重复计算，显存瓶颈所在
 - [[机制-FlashAttention]](wiki/concepts/机制-FlashAttention.md) — 访存优化而非数学改进，通过分块计算减少 HBM 读写 2-4x
 - [[方法-分布式训练]](wiki/concepts/方法-分布式训练.md) — DP/TP/PP/ZeRO 四种策略及 3D 并行的组合逻辑

@@ -111,3 +111,11 @@
 - 检索页面：`主题-LLM核心机制与推理优化`、`机制-KV-Cache`、`机制-FlashAttention`、`概念-Tokenizer`
 - 回答内容：Tokenizer → KV Cache → FlashAttention → 分布式训练四块机制及相互关系
 - 无新增回写（现有页面已覆盖，内容完整）
+
+## [2026-04-25] Ingest | 博士老师手绘LLM架构图（assets/LLM.jpg）
+
+- 来源：`assets/LLM.jpg`（Decoder-only GPT-3规模架构，96层×96头）
+- 新建 `wiki/concepts/机制-Decoder-only前向传播.md`：完整端到端前向传播机制，含5步骤（Embedding→Block×96→Linear→Softmax→自回归循环）及每步代码图
+- 更新 `wiki/concepts/机制-多头注意力.md`：补充每个Head独立W_Q/W_K/W_V投影代码图，添加指向新页面的双链
+- 更新 `wiki/summaries/主题-Transformer架构原理.md`：延伸方向中添加 [[机制-Decoder-only前向传播]] 引用
+- 更新 `index.md`：Concepts → Transformer/LLM 机制 下登记新页面
