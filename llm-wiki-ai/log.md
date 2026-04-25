@@ -74,3 +74,27 @@
 - 统一 `wiki/concepts/` 主要概念页结构为：一句话定义、第一性原理、核心机制、关键权衡、概念关系、应用边界
 - 重写注意力、推理优化、机器学习基础、Prompt/RAG/Agent 等概念页，去掉术语罗列和导航式写法
 - 将 `AI工程体系`、`LLM体系`、`5C_Framework` 等框架页改写为框架性概念，而非目录索引页
+
+## [2026-04-25] Lint | 全库结构清理与命名规范化
+
+### 删除内容
+- 删除 `wiki/summaries/L1 基础原理/`、`L2 能力模块/`、`L3 工程系统/` 三个子目录（共 30 个薄卡片页，`type: atomic`，内容过薄不符合 summaries 规范）
+- 删除 `wiki/synthesis/` 中 13 个 `摘要-xxx.md` 文件（类型混放，单篇摘要不得进入 synthesis）
+
+### 合并内容
+- `concepts/Prompt工程.md` + `concepts/Prompt_Engineering.md` → `concepts/方法-Prompt工程.md`（来源合并为 7 个，保留双方视角）
+
+### 迁移内容
+- `entities/LoRA.md` → `concepts/方法-LoRA.md`（LoRA 是训练方法，不是实体）
+
+### 文件重命名（全库规范化）
+- concepts/（22 个）：统一加 `概念-` / `机制-` / `方法-` / `框架-` / `体系-` 前缀
+- entities/（9 个）：统一加 `工具-` / `产品-` / `组织-` 前缀
+- summaries/（8 个）：统一加 `主题-` 前缀
+- synthesis/（2 个）：统一加 `对比-` / `判断-` 前缀
+
+### 链接更新
+- 批量更新所有 wiki 页面中的 `[[旧名]]` → `[[新名]]`（含 concepts、entities、summaries 链接）
+
+### 索引更新
+- 重写 `index.md`，登记所有 41 个页面（含新增的 `概念-Agent`、`体系-AI工程体系`、`方法-LoRA`）
