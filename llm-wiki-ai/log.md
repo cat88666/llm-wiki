@@ -112,6 +112,13 @@
 - 回答内容：Tokenizer → KV Cache → FlashAttention → 分布式训练四块机制及相互关系
 - 无新增回写（现有页面已覆盖，内容完整）
 
+## [2026-04-25] Ingest | 大模型微调新手全流程指南（papers/大模型微调指南.md）
+
+- 来源：`raw/papers/大模型微调指南.md`（知乎文章，Fanstuck，LoRA/QLoRA/P-Tuning 微调全流程）
+- 重写 `wiki/concepts/方法-LoRA.md`：从 entity 格式升级为标准 6 节 concept 格式，补入 QLoRA 机制、P-Tuning 对比表、工程参数说明、合并权重时机
+- 新建 `wiki/summaries/主题-大模型微调工程实践.md`：完整工程流水线（数据格式→关键参数→排障手册），含显存需求表和常见问题对照表
+- 更新 `index.md`：Summaries 新增微调工程实践页，更新 LoRA 描述
+
 ## [2026-04-25] Ingest | 博士老师手绘LLM架构图（assets/LLM.jpg）
 
 - 来源：`assets/LLM.jpg`（Decoder-only GPT-3规模架构，96层×96头）

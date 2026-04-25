@@ -18,6 +18,7 @@
 - [[主题-RAG系统设计]](wiki/summaries/主题-RAG系统设计.md) — 从文档解析到检索、重排、上下文组装的全链路工程
 - [[主题-Agent与工具调用]](wiki/summaries/主题-Agent与工具调用.md) — Function Calling、工具设计、多 Agent 编排及状态管理
 - [[主题-LLM生产化与评估]](wiki/summaries/主题-LLM生产化与评估.md) — 评估框架、可观测性、成本控制、安全防护的生产就绪清单
+- [[主题-大模型微调工程实践]](wiki/summaries/主题-大模型微调工程实践.md) — LoRA/QLoRA/P-Tuning 选型、完整训练流水线与 OOM 排障手册
 
 ---
 
@@ -52,7 +53,7 @@
 - [[方法-混合检索]](wiki/concepts/方法-混合检索.md) — 向量检索 + BM25 + RRF 融合，解决精确名词匹配失败问题
 - [[概念-Function-Calling]](wiki/concepts/概念-Function-Calling.md) — 工具描述设计、参数校验、失败处理及安全约束
 - [[概念-Agent]](wiki/concepts/概念-Agent.md) — 决策-行动-观察闭环，把语言理解转成持续执行的核心机制
-- [[方法-LoRA]](wiki/concepts/方法-LoRA.md) — 低秩分解微调，冻结原参数只训练低秩矩阵，显存节省 70%+
+- [[方法-LoRA]](wiki/concepts/方法-LoRA.md) — 低秩矩阵旁路微调，QLoRA 变体使单卡 16GB 可微调 7B 模型
 
 ---
 
