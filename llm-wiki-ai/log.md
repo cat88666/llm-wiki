@@ -98,3 +98,10 @@
 
 ### 索引更新
 - 重写 `index.md`，登记所有 41 个页面（含新增的 `概念-Agent`、`体系-AI工程体系`、`方法-LoRA`）
+
+## [2026-04-25] 新建 | 三条学习路径 synthesis 页
+
+- 新建 `wiki/synthesis/策略-LLM核心知识掌握路径.md`：5阶段学习顺序（Transformer→机制→Prompt→RAG/Agent→生产化），含判断力自检清单
+- 新建 `wiki/synthesis/策略-AI高效使用技巧全景.md`：7个维度的AI使用实战技巧，含Claude/Gemini差异、高频场景套路、5C框架
+- 新建 `wiki/synthesis/策略-LLM应用开发入门路线.md`：3阶段转型路径（接入→用好→上线），含工具选型表和常见误区
+- 更新 `index.md`，Synthesis 新增"学习路径"分组
