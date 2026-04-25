@@ -105,3 +105,9 @@
 - 新建 `wiki/synthesis/策略-AI高效使用技巧全景.md`：7个维度的AI使用实战技巧，含Claude/Gemini差异、高频场景套路、5C框架
 - 新建 `wiki/synthesis/策略-LLM应用开发入门路线.md`：3阶段转型路径（接入→用好→上线），含工具选型表和常见误区
 - 更新 `index.md`，Synthesis 新增"学习路径"分组
+
+## [2026-04-25] Query | LLM 核心机制
+
+- 检索页面：`主题-LLM核心机制与推理优化`、`机制-KV-Cache`、`机制-FlashAttention`、`概念-Tokenizer`
+- 回答内容：Tokenizer → KV Cache → FlashAttention → 分布式训练四块机制及相互关系
+- 无新增回写（现有页面已覆盖，内容完整）

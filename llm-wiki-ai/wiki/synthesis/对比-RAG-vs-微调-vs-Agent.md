@@ -4,17 +4,17 @@ status: active
 analysis_scope: comparison
 title: "RAG vs 微调 vs Agent：LLM能力增强三种路径对比"
 related_concepts:
-  - RAG
-  - Prompt工程
-  - Function-Calling
+  - 概念-RAG
+  - 方法-Prompt工程
+  - 概念-Function-Calling
 related_entities:
-  - LoRA
-  - Reranker
-  - vLLM
+  - 方法-LoRA
+  - 工具-Reranker
+  - 工具-vLLM
 related_summaries:
-  - RAG系统设计
-  - Agent与工具调用
-  - LLM生产化与评估
+  - 主题-RAG系统设计
+  - 主题-Agent与工具调用
+  - 主题-LLM生产化与评估
 sources:
   - ../raw/engineering/05-工程-RAG.md
   - ../raw/engineering/06-工程-Agent.md
@@ -34,9 +34,9 @@ lint_notes: ""
 
 **选择哪条路径，本质上取决于"是什么限制了模型"**：
 
-- 模型回答问题时**缺乏特定领域知识**或知识已过时 → 用 **RAG**
-- 模型的**输出风格、格式或特定行为**不符合要求 → 用**微调（LoRA）**
-- 模型需要**与外部系统交互、执行多步操作** → 用 **Agent**
+- 模型回答问题时**缺乏特定领域知识**或知识已过时 → 用 **[[概念-RAG]]**
+- 模型的**输出风格、格式或特定行为**不符合要求 → 用**微调（[[方法-LoRA]]）**
+- 模型需要**与外部系统交互、执行多步操作** → 用 **[[概念-Agent]]**
 
 错误的选择：用微调试图"注入知识"（效果差、成本高），用 RAG 试图改变模型"说话方式"（治标不治本），用 Agent 处理单次查询（过度工程化）。
 
@@ -63,8 +63,8 @@ lint_notes: ""
 **RAG 的关键决策链**：
 1. 文档质量 → 解析是否准确（MinerU 处理复杂 PDF）
 2. 分块策略 → 针对文档类型调整（FAQ 512-800T，技术文档 200-400T）
-3. 检索方式 → 混合检索（向量 + BM25 + RRF）优于纯向量
-4. 精排 → Reranker 是 ROI 最高的单点优化（Faithfulness 从 3.1→4.3）
+3. 检索方式 → [[方法-混合检索]]（向量 + BM25 + RRF）优于纯向量
+4. 精排 → [[工具-Reranker]] 是 ROI 最高的单点优化（Faithfulness 从 3.1→4.3）
 5. 评估 → RAGAS 四指标持续监控
 
 **RAG 不适合的情况**：需要推理/计算（RAG 只能检索，不能推理），实时数据（RAG 基于离线索引），需要改变模型行为（应用微调）。
@@ -96,7 +96,7 @@ lint_notes: ""
 2. **工具描述是第一杠杆**：做什么 + 何时调用 + 参数格式 + 返回内容，四要素完整
 3. **失败处理比规划重要**：工具返回结构化错误信息，90% 问题在这里
 4. **危险操作二次确认**：发邮件/支付必须有独立校验 + 人工确认节点
-5. **状态可追踪**：LangFuse 记录完整 trace，不可追踪 = 不可调试
+5. **状态可追踪**：[[工具-LangFuse]] 记录完整 trace，不可追踪 = 不可调试
 
 ---
 
@@ -129,6 +129,13 @@ lint_notes: ""
         ├── 操作步骤 ≤ 5？ → 单 Agent
         └── 操作步骤 > 5 或需要专业子任务？ → 多 Agent（先证明单 Agent 不够）
 ```
+
+## 相关页面
+- [[主题-RAG系统设计]] — RAG 全链路工程细节
+- [[主题-Agent与工具调用]] — Agent 工程实践
+- [[主题-LLM生产化与评估]] — 上线后的评估与运营
+- [[概念-Function-Calling]] — Agent 工具调用接口
+- [[工具-Qdrant]] — 向量数据库选型
 
 ## 来源
 - [05-工程-RAG.md](../raw/engineering/05-工程-RAG.md)

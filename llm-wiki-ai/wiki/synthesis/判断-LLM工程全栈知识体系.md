@@ -4,30 +4,30 @@ status: active
 analysis_scope: strategy
 title: "LLM工程全栈：从理论到生产的完整知识体系"
 related_concepts:
-  - Self-Attention
-  - KV-Cache
-  - FlashAttention
-  - 分布式训练
-  - Tokenizer
-  - RAG
-  - 混合检索
-  - Prompt工程
-  - Function-Calling
+  - 机制-Self-Attention
+  - 机制-KV-Cache
+  - 机制-FlashAttention
+  - 方法-分布式训练
+  - 概念-Tokenizer
+  - 概念-RAG
+  - 方法-混合检索
+  - 方法-Prompt工程
+  - 概念-Function-Calling
 related_entities:
-  - vLLM
-  - LangFuse
-  - Qdrant
-  - LoRA
-  - Reranker
-  - XGBoost
+  - 工具-vLLM
+  - 工具-LangFuse
+  - 工具-Qdrant
+  - 方法-LoRA
+  - 工具-Reranker
+  - 工具-XGBoost
 related_summaries:
-  - 机器学习基础理论
-  - Transformer架构原理
-  - LLM核心机制与推理优化
-  - Prompt工程实践
-  - RAG系统设计
-  - Agent与工具调用
-  - LLM生产化与评估
+  - 主题-机器学习基础理论
+  - 主题-Transformer架构原理
+  - 主题-LLM核心机制与推理优化
+  - 主题-Prompt工程实践
+  - 主题-RAG系统设计
+  - 主题-Agent与工具调用
+  - 主题-LLM生产化与评估
 sources:
   - ../raw/engineering/01-理论-机器学习.md
   - ../raw/engineering/02-理论-Transformer.md
