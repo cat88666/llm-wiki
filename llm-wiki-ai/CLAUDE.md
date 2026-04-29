@@ -15,16 +15,21 @@
 | `llm-wiki-ai/index.md` | 全局索引 |
 | `llm-wiki-ai/log.md` | 操作日志（append-only） |
 
-## raw/ 目录结构
+## 目录结构
 
 ```text
-llm-wiki-ai/raw/
-├── archive/     ← 归档资料
-├── course/      ← 课程材料
-├── engineering/ ← 工程实践资料
-├── papers/      ← 论文
-└── prompt/      ← 提示工程相关资料
+llm-wiki-ai/raw/          ← 原始资料（只读）
+├── archive/              ← 归档资料
+├── course/               ← 课程材料（含 transcript/ 原始 ASR）
+├── engineering/          ← 工程实践资料
+├── papers/               ← 论文
+└── prompt/               ← 提示工程相关资料
+
+llm-wiki-ai/cleaned/      ← 已修正工作副本（可编辑，非只读）
+└── course/transcript/    ← raw/course/transcript/ 的 ASR 纠错版本
 ```
+
+**cleaned/ 使用约定**：`raw/` 中 ASR 转录文本存在系统性识别错误时，在 `cleaned/` 中创建纠错副本。ingest 优先从 `cleaned/` 读取，fallback 到 `raw/`。
 
 ## 已知技术债
 

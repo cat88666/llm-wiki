@@ -126,3 +126,66 @@
 - 更新 `wiki/concepts/机制-多头注意力.md`：补充每个Head独立W_Q/W_K/W_V投影代码图，添加指向新页面的双链
 - 更新 `wiki/summaries/主题-Transformer架构原理.md`：延伸方向中添加 [[机制-Decoder-only前向传播]] 引用
 - 更新 `index.md`：Concepts → Transformer/LLM 机制 下登记新页面
+
+## [2026-04-27] Update | 建立 cleaned/ ASR 纠错区域
+
+- 背景：`raw/course/transcript/` 中 ASR 系统性将"自注意力"识别为"自助理"、"带掩码"识别为"代研码"
+- 决策：`raw/` 保持只读，在 `cleaned/course/transcript/` 建立纠错工作副本
+- 新建目录：`llm-wiki-ai/cleaned/course/transcript/`
+- 处理文件：全部 14 个 transcript .txt 文件
+- 修复项：
+  - `自助理机制` → `自注意力机制`（共 50 处，分布于 7 个文件）
+  - `自助理` → `自注意力`（涵盖全部剩余用例）
+  - `代研码` → `带掩码`（Transformer-2 和 MLA 文件各 2 处）
+- 更新 `llm-wiki-ai/CLAUDE.md`：记录 cleaned/ 目录约定及 ingest 优先级
+
+## [2026-04-27] Update | cleaned/ 深度去噪：语义修复 + 口语重复去除
+
+- 操作范围：`llm-wiki-ai/cleaned/course/transcript/` 全部 14 个文件
+- **语义错误修复**（ASR 识别错误导致意义完全错误）：
+  - `大圆模型` / `大大圆模型` → `大语言模型`（共 91+2 处）
+  - `机座模型` → `基座模型`（1 处）
+  - `技学习` → `机器学习`（1 处）
+  - `瓷性` → `意思`（2 处，如"很有意思"）
+- **口语噪音去除**（ASR 忠实记录的口语重复，不含技术信息）：
+  - `这个这个` → `这个`（54 处，含级联多次重复）
+  - `就是就是` → `就是`
+  - `其实其实` → `其实`
+  - `所以所以` → `所以`
+  - `可能可能` → `可能`
+  - `就就就` → `就`，`会会会` → `会`，`跟跟跟` → `跟`
+- `raw/` 保持只读，全部修改仅在 `cleaned/` 上进行
+
+## [2026-04-27] Update | 新增 transcribe 技能（mlx-whisper 版）
+
+- 来源：`/Users/mac/ai/video-course-notes/`（Manus 原版 skill）
+- 目标：`.claude/skills/transcribe/`
+- 新建文件：
+  - `scripts/video_to_notes.py`：主脚本（全面重写）
+  - `scripts/_gpt_worker.py`：GPT 分块处理子进程（prompt 增强）
+  - `scripts/_gpt_merge.py`：GPT 合并子进程（术语规范化）
+  - `SKILL.md`：使用说明
+- 核心改进：
+  - `manus-speech-to-text` → `mlx-whisper large-v3`（M4 原生，快 3-5x）
+  - `initial_prompt` 注入 LLM 领域词表（消灭"自助理"等误识别）
+  - `CORRECTION_MAP` 兜底纠错层
+  - `validate_transcript` + `validate_notes` 质量门禁
+  - yt-dlp `--cookies-from-browser chrome`（支持知乎登录墙）
+  - `extract_audio()`：ffmpeg → 16kHz WAV（Whisper 标准输入）
+  - 双轨输出：raw/course/transcript/ + cleaned/course/transcript/
+- 更新 `CLAUDE.md`：技能路由表增加 `/transcribe`
+
+## [2026-04-27] Transcribe | 预训练+微调的训练范式_开源生态和OpenAI的差异详解
+
+- 来源：`cleaned/course/transcript/预训练+微调的训练范式_开源生态和OpenAI的差异详解_transcript.txt`
+- 处理方式：Claude Code 直接整理（无需外部 API）
+- 输出：`raw/course/预训练+微调的训练范式_开源生态和OpenAI的差异详解.md`（18,227 字节）
+- 流程：已有清洗转录 → Claude 整理 → 写入 raw/course/
+
+## [2026-04-27] Query | 一句话解释自注意力机制
+- 检索：机制-Self-Attention.md
+- 回答：直接引用页面一句话定义，无回写
+
+## [2026-04-27] Query | 自注意力机制一句话定义
+- 检索页面：wiki/concepts/机制-Self-Attention.md
+- 回答：引用页面中一句话定义，未回写（已有稳定内容）
