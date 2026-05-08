@@ -18,6 +18,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 | `/lint` | 用户要检查知识库健康状态 |
 | `/transcribe` | 用户要将视频课程转录为笔记并写入 raw/course/ |
 | `/bug <描述>` | 用户要排查线上 bug，执行 Kibana + Yearning + 代码全链路排障 |
+| `/init` | 新人入职 / Cookie 过期时，自动检查并修复三个 MCP 的安装与认证 |
 
 详细执行流水线见 `.claude/skills/` 对应 SKILL.md。
 命名规则的唯一权威：`.claude/skills/naming/SKILL.md`。

@@ -1,6 +1,6 @@
 ---
 name: bug
-description: 代码优先的全链路 AI 排障。先理解 BUG、定位代码，代码无法确认时才按需调用 Yearning/Kibana，最终修复代码等待人工审核合并。触发命令：/bug <bug描述>
+description: 代码优先的全链路 AI 排障。先从 PingCode 读取 bug 单，再理解 BUG、定位代码，代码无法确认时才按需调用 Yearning/Kibana，最终修复代码等待人工审核合并。触发命令：/bug <bug单号或bug描述>
 user-invocable: true
 ---
 
@@ -20,63 +20,47 @@ AI 承担分析与修复，人类负责审核与提交。
 
 ## 执行流水线
 
-### 步骤 -1：环境自检与自动安装（每次启动必须执行）
+### 步骤 -1：环境自检（每次启动必须执行）
 
-在需要调用 Kibana/Yearning 之前，先确认 MCP 是否可用。若后续步骤不需要这两个工具，可跳过。
+快速探测三个 MCP 是否响应，不可用时**静默降级**，不中断排障流程：
 
-#### 检查 Kibana MCP
+| MCP | 探测方式 | 不可用时的处理 |
+|-----|---------|--------------|
+| PingCode | 调用 `pingcode_get_workitems`（有单号时自动触发） | 静默跳过步骤 0a，继续用用户描述 |
+| Kibana | 调用 `mcp__kibana__get_status` | 告知用户后跳过步骤 3b |
+| Yearning | 调用 `yearning_health_check` | 告知用户后跳过步骤 3a |
 
-```bash
-which mcp-server-kibana
-```
+**仅当**当前 bug 的根因确认**必须**依赖某个不可用的 MCP 时，才暂停并提示用户参考安装文档（`wiki/synthesis/实战-AI高阶编程技巧.md` 三、四节）。
 
-- **未安装**：运行 `npm install -g @tocharianou/mcp-server-kibana`
-- **已安装但未注册**：从 Chrome Cookie 提取认证信息并注册：
-
-  ```bash
-  # 确认 Chrome Cookie 数据库位置
-  ls ~/Library/Application\ Support/Google/Chrome/Default/Cookies
-  # 从 macOS Keychain 取解密密钥
-  security find-generic-password -w -s "Chrome Safe Storage"
-  ```
-
-  读取 `.dxit999.com` 的 `auth_pro` 和 `new-dev-eslog.dxit999.com` 的 `sid`，AES-CBC 解密（PBKDF2 密钥，1003 iter，16 bytes），**剥离前 32 字节前缀**后注册：
-
-  ```bash
-  claude mcp add kibana mcp-server-kibana -s user \
-    -e KIBANA_URL=https://new-dev-eslog.dxit999.com \
-    -e "KIBANA_COOKIES=auth_pro=<值>; sid=<值>" \
-    -e KIBANA_DEFAULT_SPACE=default \
-    -e NODE_TLS_REJECT_UNAUTHORIZED=0
-  ```
-
-#### 检查 Yearning MCP
-
-```bash
-ls ~/.codex/mcpserver/yearning/dist/index.js
-```
-
-- **不存在**：让用户指定 zip 路径，解压后 `npm install && npm run build`
-- **已编译未注册**：从 `~/.codex/config.toml` 取配置并注册：
-
-  ```bash
-  claude mcp add yearning node -s user \
-    -e YEARNING_URL=<值> -e YEARNING_SOURCE_ID=<值> \
-    -e YEARNING_USERNAME=<值> -e YEARNING_PASSWORD=<值> \
-    -- ~/.codex/mcpserver/yearning/dist/index.js
-  ```
-
-若执行了任何 `claude mcp add`，**告知用户重启 Claude Code** 后重新执行 `/bug`，然后暂停。
+> **代码仓库路径因机器而异。** 首次使用或换机器时，请告知 AI 仓库所在目录。
 
 ---
 
-### 步骤 0：理解 BUG，向用户提问
+### 步骤 0：读取 bug 单，理解 BUG
 
-读取 bug 描述，**立即分析**：
+#### 0a：自动读取 PingCode bug 单（优先）
+
+若用户输入包含 bug 单号（如 `SUN-49556`、`#SUN-49556`、URL 中含 workitem），用 `pingcode_get_workitems` 读取完整内容：
+
+```
+identifier: SUN-49556
+```
+
+从返回结果中提取：
+- **标题** → 问题现象
+- **描述/复现步骤** → 补充现象
+- **所属项目** → 推断涉及服务
+- **标签/自定义字段** → 环境、影响范围等
+
+若 PingCode 返回空或报错，跳过，继续用用户提供的描述。
+
+#### 0b：分析 BUG，一次性提问
+
+基于 bug 单内容（或用户描述）：
 
 1. 复述对问题的理解（一句话）
 2. 初步判断可能的根因方向（状态机？并发？数据异常？配置？）
-3. 列出需要补充的信息，**一次性提问**，不要逐条追问：
+3. 列出缺失信息，**一次性提问**，不逐条追问：
 
 | 可能需要补充的信息 | 何时必须 |
 |-----------------|---------|
@@ -85,7 +69,36 @@ ls ~/.codex/mcpserver/yearning/dist/index.js
 | 涉及服务/模块名 | 代码仓库有多个服务时 |
 | Kibana 索引名 | 需要查日志时 |
 
-> **原则**：能从 bug 描述推断的不问，只问真正缺失且代码分析无法绕过的信息。
+> **原则**：能从 bug 单推断的不问，只问代码分析无法绕过的信息。
+
+---
+
+### 步骤 0c：初步分析确认（等待用户）
+
+> **可跳过条件**：若用户描述已包含具体错误堆栈、明确的文件路径或精确错误码，AI 可直接进入步骤 1，无需等待确认。
+
+若描述模糊，在进入代码搜索之前，输出以下格式并**停止等待用户确认**：
+
+```
+## AI 初步分析
+
+**问题理解**：<一句话复述>
+
+**可能根因方向**：
+1. <方向1>：<简要说明>
+2. <方向2>：<简要说明>
+（最多列 3 个方向，按可能性从高到低）
+
+**计划排查路径**：
+- 代码：<拟搜索的类/关键词>
+- 数据库：<是否需要>（若不需要则写"暂不需要"）
+- 日志：<是否需要，需要什么条件>（若不需要则写"暂不需要"）
+
+请确认方向，回复"继续"即可，或告知需要调整的方向。
+```
+
+- 用户回复"继续"或确认方向 → 进入步骤 1
+- 用户指出方向有误 → 修正分析，重新输出，再次等待确认
 
 ---
 
@@ -93,14 +106,17 @@ ls ~/.codex/mcpserver/yearning/dist/index.js
 
 **这是最重要的步骤，优先于一切外部查询。**
 
+代码仓库位置：**由用户所在环境决定**，首次使用时请告知 AI（本机默认 `/Users/mac/IdeaProjects/dx-game-texas`）。
+
 根据 bug 描述中的服务名、功能点、错误信息，在代码仓库中搜索相关逻辑：
 
 ```bash
+REPO=<仓库路径>  # 由用户告知或从 project memory 读取
 # 按关键词搜索
-grep -r "关键词" src/ --include="*.java" -l
+grep -r "关键词" $REPO/src/ --include="*.java" -l
 # 查看最近变更
-git log --oneline -20 -- src/相关路径/
-git diff HEAD~5 -- src/相关路径/
+git -C $REPO log --oneline -20 -- src/相关路径/
+git -C $REPO diff HEAD~5 -- src/相关路径/
 ```
 
 **分析维度**：
