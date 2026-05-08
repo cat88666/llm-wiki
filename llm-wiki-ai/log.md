@@ -17,6 +17,11 @@
 - 更新 `wiki/index.md`（规范格式，增加分类说明）
 - 创建各类页面模板：`_template.md`（concepts / entities / summaries / synthesis）
 
+## [2026-05-08] Update | 优化 实战-AI高阶编程技巧.md 和 bug SKILL.md
+- 来源：真实排障案例（用户无法开始德州扑克游戏）
+- 更新 `wiki/synthesis/实战-AI高阶编程技巧.md`：新增"五、Kibana 搜索效率技巧"，包含 epoch_millis、噪声过滤模板、用户→表级升级路径、console/proxy 路由规则
+- 更新 `.claude/skills/bug/SKILL.md`：步骤 1 增加三原则（epoch_millis、噪声排除、搜索升级路径），减少无效重试 token 消耗
+
 ## [2026-04-22] Ingest | Karpathy 的LLM Wiki个人知识管理方案和本体模型驱动AI写作比较
 - 来源：`raw/wap/001-Wiki方案.md`，作者：人月聊IT，发布：2026-04-10
 - 创建摘要页：`summaries/001-Wiki方案.md`
