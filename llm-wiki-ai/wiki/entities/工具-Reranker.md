@@ -7,9 +7,9 @@ aliases: ["精排", "Cross-Encoder", "重排序", "Reranking"]
 domain: "RAG / 信息检索"
 related: ["RAG", "混合检索", "Prompt工程"]
 sources:
-  - ../raw/engineering/05-工程-RAG.md
-  - ../raw/engineering/11-LLM工程.md
-  - ../raw/engineering/07-工程-生产化.md
+  - raw/engineering/05-工程-RAG.md
+  - raw/engineering/11-LLM工程.md
+  - raw/engineering/07-工程-生产化.md
 created: 2026-04-22
 updated: 2026-04-22
 lint_notes: ""
@@ -43,6 +43,6 @@ lint_notes: ""
 - LambdaMART：传统机器学习 Reranker（Gradient Boosting for ranking），在神经 Reranker 出现前的主流方案，现在主要作为轻量级备选
 
 ## 来源
-- [05-工程-RAG.md](../raw/engineering/05-工程-RAG.md)
-- [11-LLM工程.md](../raw/engineering/11-LLM工程.md)
-- [07-工程-生产化.md](../raw/engineering/07-工程-生产化.md)
+- [05-工程-RAG.md](../../raw/engineering/05-工程-RAG.md)
+- [11-LLM工程.md](../../raw/engineering/11-LLM工程.md)
+- [07-工程-生产化.md](../../raw/engineering/07-工程-生产化.md)

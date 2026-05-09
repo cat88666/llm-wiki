@@ -5,15 +5,15 @@ summary_scope: topic
 title: "Prompt工程实践"
 source_count: 9
 sources:
-  - ../raw/engineering/04-工程-Prompt.md
-  - ../raw/prompt/5C提示词.md
-  - ../raw/prompt/完整提示工程指南.md
-  - ../raw/prompt/提示工程指南.md
-  - ../raw/prompt/提示策略Gemini.md
-  - ../raw/prompt/提示词Anthropic.md
-  - ../raw/prompt/提示词工程.md
-  - ../raw/prompt/提示词工程指南.md
-  - ../raw/prompt/提示词白皮书Goolge.md
+  - raw/engineering/04-工程-Prompt.md
+  - raw/prompt/5C提示词.md
+  - raw/prompt/完整提示工程指南.md
+  - raw/prompt/提示工程指南.md
+  - raw/prompt/提示策略Gemini.md
+  - raw/prompt/提示词Anthropic.md
+  - raw/prompt/提示词工程.md
+  - raw/prompt/提示词工程指南.md
+  - raw/prompt/提示词白皮书Goolge.md
 ingested: 2026-04-22
 updated: 2026-04-23
 topics: []
@@ -64,12 +64,12 @@ lint_notes: ""
 - 可连接到 [[主题-LLM生产化与评估]] 的安全防护部分
 
 ## 来源
-- [04-工程-Prompt.md](../raw/engineering/04-工程-Prompt.md)
-- [5C提示词.md](../raw/prompt/5C提示词.md)
-- [完整提示工程指南.md](../raw/prompt/完整提示工程指南.md)
-- [提示工程指南.md](../raw/prompt/提示工程指南.md)
-- [提示策略Gemini.md](../raw/prompt/提示策略Gemini.md)
-- [提示词Anthropic.md](../raw/prompt/提示词Anthropic.md)
-- [提示词工程.md](../raw/prompt/提示词工程.md)
-- [提示词工程指南.md](../raw/prompt/提示词工程指南.md)
-- [提示词白皮书Goolge.md](../raw/prompt/提示词白皮书Goolge.md)
+- [04-工程-Prompt.md](../../raw/engineering/04-工程-Prompt.md)
+- [5C提示词.md](../../raw/prompt/5C提示词.md)
+- [完整提示工程指南.md](../../raw/prompt/完整提示工程指南.md)
+- [提示工程指南.md](../../raw/prompt/提示工程指南.md)
+- [提示策略Gemini.md](../../raw/prompt/提示策略Gemini.md)
+- [提示词Anthropic.md](../../raw/prompt/提示词Anthropic.md)
+- [提示词工程.md](../../raw/prompt/提示词工程.md)
+- [提示词工程指南.md](../../raw/prompt/提示词工程指南.md)
+- [提示词白皮书Goolge.md](../../raw/prompt/提示词白皮书Goolge.md)

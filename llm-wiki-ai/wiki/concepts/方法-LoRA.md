@@ -9,9 +9,9 @@ related:
   - 对比-RAG-vs-微调-vs-Agent
   - 机制-KV-Cache
 sources:
-  - ../raw/engineering/07-工程-生产化.md
-  - ../raw/engineering/11-LLM工程.md
-  - ../raw/papers/大模型微调指南.md
+  - raw/engineering/07-工程-生产化.md
+  - raw/engineering/11-LLM工程.md
+  - raw/papers/大模型微调指南.md
 created: 2026-04-22
 updated: 2026-04-25
 lint_notes: ""
@@ -64,6 +64,7 @@ lint_notes: ""
 ## 与其他概念的关系
 
 - [[对比-RAG-vs-微调-vs-Agent]]：LoRA 是三条增强路径之一，解决"模型说话方式不对"的问题，而非注入知识
+- [[主题-大模型微调工程实践]]：汇总 LoRA/QLoRA/P-Tuning 的工程流水线、参数选择和常见排障。
 - [[方法-分布式训练]]：QLoRA 让单卡可微调原本需要多卡的大模型，从根本上改变了微调的硬件门槛
 - [[机制-KV-Cache]]：LoRA 合并后的模型与原始模型推理路径相同，KV Cache 策略不受影响
 - [[概念-RAG]]：两者互补，LoRA 改善"说话方式"，RAG 保证"知识准确"；组合使用是大模型落地常见方案
@@ -76,6 +77,6 @@ lint_notes: ""
 
 ## 来源
 
-- [07-工程-生产化.md](../raw/engineering/07-工程-生产化.md)
-- [11-LLM工程.md](../raw/engineering/11-LLM工程.md)
-- [大模型微调指南.md](../raw/papers/大模型微调指南.md)
+- [07-工程-生产化.md](../../raw/engineering/07-工程-生产化.md)
+- [11-LLM工程.md](../../raw/engineering/11-LLM工程.md)
+- [大模型微调指南.md](../../raw/papers/大模型微调指南.md)

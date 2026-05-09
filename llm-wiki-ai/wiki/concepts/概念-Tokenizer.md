@@ -5,8 +5,8 @@ name: "Tokenizer"
 aliases: ["分词器", "BPE", "SentencePiece", "WordPiece", "tokenization"]
 related: ["Self-Attention", "KV-Cache", "Prompt工程", "LLM体系"]
 sources:
-  - ../raw/engineering/03-理论-LLM核心机制.md
-  - ../raw/engineering/10-LLM原理.md
+  - raw/engineering/03-理论-LLM核心机制.md
+  - raw/engineering/10-LLM原理.md
 created: 2026-04-22
 updated: 2026-04-23
 lint_notes: ""
@@ -43,5 +43,5 @@ lint_notes: ""
 - 很多“模型不擅长某类字符串”的问题，根因其实在 token 切分而不只在参数规模。
 
 ## 来源
-- [03-理论-LLM核心机制.md](../raw/engineering/03-理论-LLM核心机制.md)
-- [10-LLM原理.md](../raw/engineering/10-LLM原理.md)
+- [03-理论-LLM核心机制.md](../../raw/engineering/03-理论-LLM核心机制.md)
+- [10-LLM原理.md](../../raw/engineering/10-LLM原理.md)

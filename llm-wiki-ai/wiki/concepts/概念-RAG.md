@@ -39,6 +39,6 @@ last_updated: 2026-04-23
 - 如果问题主要依赖复杂规划或长链动作，单纯 RAG 不够，需要与 Agent 结合。
 
 ## 来源
-- [02-RAG检索增强.md](../raw/course/02-RAG检索增强.md)
-- [05-工程-RAG.md](../raw/engineering/05-工程-RAG.md)
-- [11-LLM工程.md](../raw/engineering/11-LLM工程.md)
+- [02-RAG检索增强.md](../../raw/course/02-RAG检索增强.md)
+- [05-工程-RAG.md](../../raw/engineering/05-工程-RAG.md)
+- [11-LLM工程.md](../../raw/engineering/11-LLM工程.md)

@@ -167,7 +167,7 @@ Claude 使用 Constitutional AI 技术进行训练：
 ## 关联连接
 - [[方法-Prompt工程]] — 提示工程总览
 - [[组织-Anthropic]] — Anthropic 公司
-- [[Adaptive_Thinking]] — 自适应思考机制
-- [[Agentic_Systems]] — 智能体系统
-- [[摘要-anthropic-prompting-best-practices]] — Anthropic 最佳实践
-- [[摘要-ai-prompt-engineering-2025-2026-espo]] — 2025-2026 指南
+- Adaptive Thinking — 自适应思考机制
+- Agentic Systems — 智能体系统
+- [提示词Anthropic.md](../../raw/prompt/提示词Anthropic.md) — Anthropic 最佳实践来源
+- [提示工程指南.md](../../raw/prompt/提示工程指南.md) — 现代提示工程指南来源

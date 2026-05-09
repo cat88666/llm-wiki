@@ -53,10 +53,10 @@ updated: 2026-04-25
 - 适合概括提示工程的通用原理；关注工程落地与系统视角时，优先看 [[框架-Context-Engineering]]。
 
 ## 来源
-- [04-工程-Prompt.md](../raw/engineering/04-工程-Prompt.md)
-- [11-LLM工程.md](../raw/engineering/11-LLM工程.md)
-- [12-项目-实战.md](../raw/engineering/12-项目-实战.md)
-- [提示工程指南.md](../raw/prompt/提示工程指南.md)
-- [提示策略Gemini.md](../raw/prompt/提示策略Gemini.md)
-- [提示词Anthropic.md](../raw/prompt/提示词Anthropic.md)
-- [提示词白皮书Goolge.md](../raw/prompt/提示词白皮书Goolge.md)
+- [04-工程-Prompt.md](../../raw/engineering/04-工程-Prompt.md)
+- [11-LLM工程.md](../../raw/engineering/11-LLM工程.md)
+- [12-项目-实战.md](../../raw/engineering/12-项目-实战.md)
+- [提示工程指南.md](../../raw/prompt/提示工程指南.md)
+- [提示策略Gemini.md](../../raw/prompt/提示策略Gemini.md)
+- [提示词Anthropic.md](../../raw/prompt/提示词Anthropic.md)
+- [提示词白皮书Goolge.md](../../raw/prompt/提示词白皮书Goolge.md)

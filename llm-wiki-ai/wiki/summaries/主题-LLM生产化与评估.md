@@ -5,9 +5,9 @@ summary_scope: topic
 title: "LLM生产化与评估"
 source_count: 3
 sources:
-  - ../raw/engineering/07-工程-生产化.md
-  - ../raw/engineering/11-LLM工程.md
-  - ../raw/engineering/12-项目-实战.md
+  - raw/engineering/07-工程-生产化.md
+  - raw/engineering/11-LLM工程.md
+  - raw/engineering/12-项目-实战.md
 ingested: 2026-04-22
 updated: 2026-04-22
 topics: []
@@ -53,9 +53,9 @@ lint_notes: ""
 - 可拆分为 [[工具-LangFuse]] 实体页（可观测性配置、Dashboard 使用）
 - 可延伸到 [[工具-vLLM]] 实体页（推理服务部署、PagedAttention 生产配置）
 - 可连接到 [[方法-LoRA]] 实体页（微调 vs RAG 的选择边界）
-- 可连接综合分析 [[RAG-vs-微调-vs-Agent：LLM能力增强三种路径对比]]
+- 可连接综合分析 [[对比-RAG-vs-微调-vs-Agent]]
 
 ## 来源
-- [07-工程-生产化.md](../raw/engineering/07-工程-生产化.md)
-- [11-LLM工程.md](../raw/engineering/11-LLM工程.md)
-- [12-项目-实战.md](../raw/engineering/12-项目-实战.md)
+- [07-工程-生产化.md](../../raw/engineering/07-工程-生产化.md)
+- [11-LLM工程.md](../../raw/engineering/11-LLM工程.md)
+- [12-项目-实战.md](../../raw/engineering/12-项目-实战.md)

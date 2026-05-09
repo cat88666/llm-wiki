@@ -38,6 +38,6 @@ last_updated: 2026-04-23
 - 在对安全、隐私或成本敏感的系统里，需要谨慎决定是否显式暴露完整推理过程。
 
 ## 来源
-- [提示工程指南.md](../raw/prompt/提示工程指南.md)
-- [提示策略Gemini.md](../raw/prompt/提示策略Gemini.md)
-- [提示词白皮书Goolge.md](../raw/prompt/提示词白皮书Goolge.md)
+- [提示工程指南.md](../../raw/prompt/提示工程指南.md)
+- [提示策略Gemini.md](../../raw/prompt/提示策略Gemini.md)
+- [提示词白皮书Goolge.md](../../raw/prompt/提示词白皮书Goolge.md)

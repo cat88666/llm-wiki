@@ -38,6 +38,6 @@ last_updated: 2026-04-23
 - 当任务本身需要外部知识时，仅靠 few-shot 仍不如接入 [[概念-RAG]]。
 
 ## 来源
-- [提示策略Gemini.md](../raw/prompt/提示策略Gemini.md)
-- [提示词Anthropic.md](../raw/prompt/提示词Anthropic.md)
-- [提示词白皮书Goolge.md](../raw/prompt/提示词白皮书Goolge.md)
+- [提示策略Gemini.md](../../raw/prompt/提示策略Gemini.md)
+- [提示词Anthropic.md](../../raw/prompt/提示词Anthropic.md)
+- [提示词白皮书Goolge.md](../../raw/prompt/提示词白皮书Goolge.md)

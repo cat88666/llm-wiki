@@ -16,11 +16,11 @@ related_summaries:
   - 主题-Agent与工具调用
   - 主题-LLM生产化与评估
 sources:
-  - ../raw/engineering/05-工程-RAG.md
-  - ../raw/engineering/06-工程-Agent.md
-  - ../raw/engineering/07-工程-生产化.md
-  - ../raw/engineering/11-LLM工程.md
-  - ../raw/engineering/12-项目-实战.md
+  - raw/engineering/05-工程-RAG.md
+  - raw/engineering/06-工程-Agent.md
+  - raw/engineering/07-工程-生产化.md
+  - raw/engineering/11-LLM工程.md
+  - raw/engineering/12-项目-实战.md
 created: 2026-04-22
 updated: 2026-04-22
 lint_notes: ""
@@ -138,8 +138,8 @@ lint_notes: ""
 - [[工具-Qdrant]] — 向量数据库选型
 
 ## 来源
-- [05-工程-RAG.md](../raw/engineering/05-工程-RAG.md)
-- [06-工程-Agent.md](../raw/engineering/06-工程-Agent.md)
-- [07-工程-生产化.md](../raw/engineering/07-工程-生产化.md)
-- [11-LLM工程.md](../raw/engineering/11-LLM工程.md)
-- [12-项目-实战.md](../raw/engineering/12-项目-实战.md)
+- [05-工程-RAG.md](../../raw/engineering/05-工程-RAG.md)
+- [06-工程-Agent.md](../../raw/engineering/06-工程-Agent.md)
+- [07-工程-生产化.md](../../raw/engineering/07-工程-生产化.md)
+- [11-LLM工程.md](../../raw/engineering/11-LLM工程.md)
+- [12-项目-实战.md](../../raw/engineering/12-项目-实战.md)

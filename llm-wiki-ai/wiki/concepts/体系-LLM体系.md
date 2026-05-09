@@ -2,7 +2,10 @@
 title: "LLM体系"
 type: concept
 tags: [概念, Hub, 导航, LLM]
-sources: []
+sources:
+  - raw/engineering/02-理论-Transformer.md
+  - raw/engineering/03-理论-LLM核心机制.md
+  - raw/engineering/11-LLM工程.md
 last_updated: 2026-04-23
 children:
   - 机器学习
@@ -22,7 +25,7 @@ children:
 - 如果只看 Prompt 或只看模型结构，会丢掉真正决定效果的上下游约束。
 - 所以理解 LLM 体系，关键不是记术语，而是知道每一层在解决哪一个根问题。
 
-## 核心结构
+## 核心机制
 - 基础层：机器学习、优化、正则化、表示学习。
 - 模型层：Tokenizer、Self-Attention、多头注意力、训练与推理机制。
 - 能力层：Prompt、RAG、工具调用、Agent。
@@ -41,3 +44,8 @@ children:
 ## 应用边界
 - 适合作为理解大模型知识图谱的框架页。
 - 具体问题仍应下钻到对应概念页讨论。
+
+## 来源
+- [02-理论-Transformer.md](../../raw/engineering/02-理论-Transformer.md)
+- [03-理论-LLM核心机制.md](../../raw/engineering/03-理论-LLM核心机制.md)
+- [11-LLM工程.md](../../raw/engineering/11-LLM工程.md)

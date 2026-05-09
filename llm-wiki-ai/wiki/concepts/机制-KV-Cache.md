@@ -5,9 +5,9 @@ name: "KV-Cache"
 aliases: ["KV Cache", "Key-Value Cache", "键值缓存"]
 related: ["Self-Attention", "多头注意力", "FlashAttention", "分布式训练"]
 sources:
-  - ../raw/engineering/03-理论-LLM核心机制.md
-  - ../raw/engineering/10-LLM原理.md
-  - ../raw/engineering/02-理论-Transformer.md
+  - raw/engineering/03-理论-LLM核心机制.md
+  - raw/engineering/10-LLM原理.md
+  - raw/engineering/02-理论-Transformer.md
 created: 2026-04-22
 updated: 2026-04-23
 lint_notes: ""
@@ -45,6 +45,6 @@ lint_notes: ""
 - 在极长上下文服务中，缓存管理策略往往比单纯模型算力更关键。
 
 ## 来源
-- [03-理论-LLM核心机制.md](../raw/engineering/03-理论-LLM核心机制.md)
-- [10-LLM原理.md](../raw/engineering/10-LLM原理.md)
-- [02-理论-Transformer.md](../raw/engineering/02-理论-Transformer.md)
+- [03-理论-LLM核心机制.md](../../raw/engineering/03-理论-LLM核心机制.md)
+- [10-LLM原理.md](../../raw/engineering/10-LLM原理.md)
+- [02-理论-Transformer.md](../../raw/engineering/02-理论-Transformer.md)

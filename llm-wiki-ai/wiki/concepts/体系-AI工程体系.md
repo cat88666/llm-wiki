@@ -2,7 +2,11 @@
 title: "AI工程体系"
 type: concept
 tags: [概念, Hub, 导航, AI工程]
-sources: []
+sources:
+  - raw/engineering/05-工程-RAG.md
+  - raw/engineering/06-工程-Agent.md
+  - raw/engineering/07-工程-生产化.md
+  - raw/engineering/11-LLM工程.md
 last_updated: 2026-04-23
 children:
   - RAG
@@ -40,3 +44,9 @@ children:
 ## 应用边界
 - 适合描述 AI 系统落地的整体框架，不是单一算法或组件。
 - 当讨论的是局部机制时，应回到具体概念页，而不是停留在体系层表述。
+
+## 来源
+- [05-工程-RAG.md](../../raw/engineering/05-工程-RAG.md)
+- [06-工程-Agent.md](../../raw/engineering/06-工程-Agent.md)
+- [07-工程-生产化.md](../../raw/engineering/07-工程-生产化.md)
+- [11-LLM工程.md](../../raw/engineering/11-LLM工程.md)

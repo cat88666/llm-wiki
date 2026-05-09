@@ -29,7 +29,7 @@ updated: 2026-04-25
 - Decoder-only 的设计选择是：只用一种模块（因果 Self-Attention + FFN），反复堆叠 N 次，让深度取代宽度，用层数换取对序列的逐步抽象理解。
 - 每一层看到的是"上一层对整个历史的理解结果"，而不是原始 token——这是深度堆叠有效的根本原因。
 
-## 完整前向传播流程
+## 核心机制
 
 以下流程对应博士老师手绘图（`assets/LLM.jpg`）从左到右的完整路径：
 
@@ -134,6 +134,6 @@ updated: 2026-04-25
 
 ## 来源
 
-- [手绘架构图](../../assets/LLM.jpg) — 博士老师手绘的 GPT-3 规模 Decoder-only 完整前向传播图（96层，96头）
-- [02-理论-Transformer.md](../raw/engineering/02-理论-Transformer.md)
-- [03-理论-LLM核心机制.md](../raw/engineering/03-理论-LLM核心机制.md)
+- [手绘架构图](../../../assets/LLM.jpg) — 博士老师手绘的 GPT-3 规模 Decoder-only 完整前向传播图（96层，96头）
+- [02-理论-Transformer.md](../../raw/engineering/02-理论-Transformer.md)
+- [03-理论-LLM核心机制.md](../../raw/engineering/03-理论-LLM核心机制.md)

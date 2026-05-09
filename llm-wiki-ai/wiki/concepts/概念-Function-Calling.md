@@ -5,9 +5,9 @@ name: "Function-Calling"
 aliases: ["工具调用", "Tool Use", "Tool Calling", "函数调用"]
 related: ["RAG", "Prompt工程", "Agent与工具调用"]
 sources:
-  - ../raw/engineering/06-工程-Agent.md
-  - ../raw/engineering/11-LLM工程.md
-  - ../raw/engineering/12-项目-实战.md
+  - raw/engineering/06-工程-Agent.md
+  - raw/engineering/11-LLM工程.md
+  - raw/engineering/12-项目-实战.md
 created: 2026-04-22
 updated: 2026-04-23
 lint_notes: ""
@@ -43,6 +43,6 @@ lint_notes: ""
 - 复杂工作流仍需要状态管理、权限控制、重试和幂等等系统设计。
 
 ## 来源
-- [06-工程-Agent.md](../raw/engineering/06-工程-Agent.md)
-- [11-LLM工程.md](../raw/engineering/11-LLM工程.md)
-- [12-项目-实战.md](../raw/engineering/12-项目-实战.md)
+- [06-工程-Agent.md](../../raw/engineering/06-工程-Agent.md)
+- [11-LLM工程.md](../../raw/engineering/11-LLM工程.md)
+- [12-项目-实战.md](../../raw/engineering/12-项目-实战.md)

@@ -18,6 +18,14 @@ related_summaries:
   - 主题-RAG系统设计
   - 主题-Agent与工具调用
   - 主题-LLM生产化与评估
+sources:
+  - raw/engineering/01-理论-机器学习.md
+  - raw/engineering/02-理论-Transformer.md
+  - raw/engineering/03-理论-LLM核心机制.md
+  - raw/engineering/04-工程-Prompt.md
+  - raw/engineering/05-工程-RAG.md
+  - raw/engineering/06-工程-Agent.md
+  - raw/engineering/07-工程-生产化.md
 created: 2026-04-25
 updated: 2026-04-25
 ---
@@ -172,3 +180,12 @@ updated: 2026-04-25
 ## 参考综合页
 - [[判断-LLM工程全栈知识体系]] — 全局知识地图
 - [[对比-RAG-vs-微调-vs-Agent]] — 路径选型
+
+## 来源
+- [01-理论-机器学习.md](../../raw/engineering/01-理论-机器学习.md)
+- [02-理论-Transformer.md](../../raw/engineering/02-理论-Transformer.md)
+- [03-理论-LLM核心机制.md](../../raw/engineering/03-理论-LLM核心机制.md)
+- [04-工程-Prompt.md](../../raw/engineering/04-工程-Prompt.md)
+- [05-工程-RAG.md](../../raw/engineering/05-工程-RAG.md)
+- [06-工程-Agent.md](../../raw/engineering/06-工程-Agent.md)
+- [07-工程-生产化.md](../../raw/engineering/07-工程-生产化.md)

@@ -7,9 +7,9 @@ aliases: ["qdrant", "向量数据库"]
 domain: "向量检索 / RAG基础设施"
 related: ["RAG", "混合检索", "Prompt工程"]
 sources:
-  - ../raw/engineering/05-工程-RAG.md
-  - ../raw/engineering/11-LLM工程.md
-  - ../raw/engineering/12-项目-实战.md
+  - raw/engineering/05-工程-RAG.md
+  - raw/engineering/11-LLM工程.md
+  - raw/engineering/12-项目-实战.md
 created: 2026-04-22
 updated: 2026-04-22
 lint_notes: ""
@@ -43,6 +43,6 @@ lint_notes: ""
 - Elasticsearch：成熟的搜索引擎，7.x 版本后支持 KNN 向量搜索，适合已有 ES 基础设施的团队，混合检索支持好但向量性能不如专用向量数据库
 
 ## 来源
-- [05-工程-RAG.md](../raw/engineering/05-工程-RAG.md)
-- [11-LLM工程.md](../raw/engineering/11-LLM工程.md)
-- [12-项目-实战.md](../raw/engineering/12-项目-实战.md)
+- [05-工程-RAG.md](../../raw/engineering/05-工程-RAG.md)
+- [11-LLM工程.md](../../raw/engineering/11-LLM工程.md)
+- [12-项目-实战.md](../../raw/engineering/12-项目-实战.md)

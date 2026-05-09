@@ -5,9 +5,9 @@ name: "FlashAttention"
 aliases: ["Flash Attention", "IO-aware Attention", "FlashAttention-2", "FlashAttention-3"]
 related: ["Self-Attention", "多头注意力", "KV-Cache", "分布式训练"]
 sources:
-  - ../raw/engineering/03-理论-LLM核心机制.md
-  - ../raw/engineering/09-Transformer.md
-  - ../raw/engineering/10-LLM原理.md
+  - raw/engineering/03-理论-LLM核心机制.md
+  - raw/engineering/09-Transformer.md
+  - raw/engineering/10-LLM原理.md
 created: 2026-04-22
 updated: 2026-04-23
 lint_notes: ""
@@ -44,6 +44,6 @@ lint_notes: ""
 - 它解决的是“算 attention 太贵”，不解决“上下文太长导致缓存太大”的所有问题。
 
 ## 来源
-- [03-理论-LLM核心机制.md](../raw/engineering/03-理论-LLM核心机制.md)
-- [09-Transformer.md](../raw/engineering/09-Transformer.md)
-- [10-LLM原理.md](../raw/engineering/10-LLM原理.md)
+- [03-理论-LLM核心机制.md](../../raw/engineering/03-理论-LLM核心机制.md)
+- [09-Transformer.md](../../raw/engineering/09-Transformer.md)
+- [10-LLM原理.md](../../raw/engineering/10-LLM原理.md)

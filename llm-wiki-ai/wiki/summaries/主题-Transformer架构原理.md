@@ -5,8 +5,8 @@ summary_scope: topic
 title: "Transformer架构原理"
 source_count: 2
 sources:
-  - ../raw/engineering/02-理论-Transformer.md
-  - ../raw/engineering/09-Transformer.md
+  - raw/engineering/02-理论-Transformer.md
+  - raw/engineering/09-Transformer.md
 ingested: 2026-04-22
 updated: 2026-04-22
 topics: []
@@ -57,5 +57,5 @@ lint_notes: ""
 - [[主题-LLM核心机制与推理优化]] — GQA、分布式训练等规模化机制
 
 ## 来源
-- [02-理论-Transformer.md](../raw/engineering/02-理论-Transformer.md)
-- [09-Transformer.md](../raw/engineering/09-Transformer.md)
+- [02-理论-Transformer.md](../../raw/engineering/02-理论-Transformer.md)
+- [09-Transformer.md](../../raw/engineering/09-Transformer.md)

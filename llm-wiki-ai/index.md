@@ -87,6 +87,9 @@
 - [[对比-RAG-vs-微调-vs-Agent]](wiki/synthesis/对比-RAG-vs-微调-vs-Agent.md) — 三种增强路径的场景、成本、效果对比及选型决策树
 - [[判断-LLM工程全栈知识体系]](wiki/synthesis/判断-LLM工程全栈知识体系.md) — 四层知识体系全景及关键判断力清单
 
+### 工程实战
+- [[策略-AI高效解BUG方法论]](wiki/synthesis/策略-AI高效解BUG方法论.md) — 用 Codex、Kibana、Yearning 和代码分析串联线上问题排障流程
+
 ---
 
 ## Template Files

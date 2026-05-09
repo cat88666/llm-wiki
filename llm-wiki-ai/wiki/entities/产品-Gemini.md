@@ -129,5 +129,5 @@ Gemini 默认启用 Python 代码执行：
 ## 关联连接
 - [[方法-Prompt工程]] — 提示工程总览
 - [[组织-Google]] — Google 公司
-- [[摘要-gemini-api-prompting-strategies]] — Gemini API 策略来源
-- [[摘要-google-prompt-engineering-whitepaper]] — Google 白皮书
+- [提示策略Gemini.md](../../raw/prompt/提示策略Gemini.md) — Gemini API 策略来源
+- [提示词白皮书Goolge.md](../../raw/prompt/提示词白皮书Goolge.md) — Google 白皮书来源

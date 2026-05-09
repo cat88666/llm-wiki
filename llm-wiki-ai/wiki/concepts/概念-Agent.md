@@ -38,5 +38,5 @@ last_updated: 2026-04-23
 - 对一次性、确定性的简单任务，用 Agent 往往是过度设计。
 
 ## 来源
-- [03-Agent智能体.md](../raw/course/03-Agent智能体.md)
-- [06-工程-Agent.md](../raw/engineering/06-工程-Agent.md)
+- [03-Agent智能体.md](../../raw/course/03-Agent智能体.md)
+- [06-工程-Agent.md](../../raw/engineering/06-工程-Agent.md)

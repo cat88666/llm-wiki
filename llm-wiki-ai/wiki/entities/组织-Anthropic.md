@@ -54,5 +54,5 @@ Claude Sonnet 4.6 和 4.5 支持上下文感知：
 ## 关联连接
 - [[产品-Claude]] — Anthropic 的 LLM 产品
 - [[方法-Prompt工程]] — 提示工程（Anthropic 是重要贡献者）
-- [[Constitutional_AI]] — 宪法 AI 训练方法
-- [[摘要-anthropic-prompting-best-practices]] — 官方最佳实践指南
+- Constitutional AI — 宪法 AI 训练方法
+- [提示词Anthropic.md](../../raw/prompt/提示词Anthropic.md) — 官方最佳实践指南来源

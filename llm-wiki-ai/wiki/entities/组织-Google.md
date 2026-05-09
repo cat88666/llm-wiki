@@ -81,6 +81,6 @@ Gemini 系列的原生多模态能力：
 
 ## 关联连接
 - [[产品-Gemini]] — Google 的 LLM 产品
-- [[DeepMind]] — Google 的 AI 研究部门
-- [[摘要-google-prompt-engineering-whitepaper]] — Google 官方白皮书
-- [[摘要-gemini-api-prompting-strategies]] — Gemini API 策略
+- Google DeepMind — Google 的 AI 研究部门
+- [提示词白皮书Goolge.md](../../raw/prompt/提示词白皮书Goolge.md) — Google 官方白皮书来源
+- [提示策略Gemini.md](../../raw/prompt/提示策略Gemini.md) — Gemini API 策略来源

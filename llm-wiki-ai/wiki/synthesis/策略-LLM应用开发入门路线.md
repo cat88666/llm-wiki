@@ -23,6 +23,12 @@ related_summaries:
 related_synthesis:
   - 对比-RAG-vs-微调-vs-Agent
   - 判断-LLM工程全栈知识体系
+sources:
+  - raw/engineering/04-工程-Prompt.md
+  - raw/engineering/05-工程-RAG.md
+  - raw/engineering/06-工程-Agent.md
+  - raw/engineering/07-工程-生产化.md
+  - raw/engineering/11-LLM工程.md
 created: 2026-04-25
 updated: 2026-04-25
 ---
@@ -194,3 +200,10 @@ updated: 2026-04-25
 - [[对比-RAG-vs-微调-vs-Agent]] — 路径选型
 - [[策略-LLM核心知识掌握路径]] — 知识学习顺序
 - [[策略-AI高效使用技巧全景]] — 使用技巧基础
+
+## 来源
+- [04-工程-Prompt.md](../../raw/engineering/04-工程-Prompt.md)
+- [05-工程-RAG.md](../../raw/engineering/05-工程-RAG.md)
+- [06-工程-Agent.md](../../raw/engineering/06-工程-Agent.md)
+- [07-工程-生产化.md](../../raw/engineering/07-工程-生产化.md)
+- [11-LLM工程.md](../../raw/engineering/11-LLM工程.md)

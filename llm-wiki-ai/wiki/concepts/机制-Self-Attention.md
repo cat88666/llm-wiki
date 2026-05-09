@@ -5,9 +5,9 @@ name: "Self-Attention"
 aliases: ["自注意力", "Scaled Dot-Product Attention", "注意力机制"]
 related: ["多头注意力", "KV-Cache", "FlashAttention", "Tokenizer"]
 sources:
-  - ../raw/engineering/02-理论-Transformer.md
-  - ../raw/engineering/09-Transformer.md
-  - ../raw/engineering/03-理论-LLM核心机制.md
+  - raw/engineering/02-理论-Transformer.md
+  - raw/engineering/09-Transformer.md
+  - raw/engineering/03-理论-LLM核心机制.md
 created: 2026-04-22
 updated: 2026-04-23
 lint_notes: ""
@@ -46,6 +46,6 @@ lint_notes: ""
 - 当上下文极长时，瓶颈不在“会不会注意”，而在“算不算得起”。
 
 ## 来源
-- [02-理论-Transformer.md](../raw/engineering/02-理论-Transformer.md)
-- [09-Transformer.md](../raw/engineering/09-Transformer.md)
-- [03-理论-LLM核心机制.md](../raw/engineering/03-理论-LLM核心机制.md)
+- [02-理论-Transformer.md](../../raw/engineering/02-理论-Transformer.md)
+- [09-Transformer.md](../../raw/engineering/09-Transformer.md)
+- [03-理论-LLM核心机制.md](../../raw/engineering/03-理论-LLM核心机制.md)
